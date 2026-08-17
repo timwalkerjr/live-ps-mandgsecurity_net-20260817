@@ -1,11 +1,9 @@
 // @ts-check
-import cloudflare from '@astrojs/cloudflare';
 import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
-import { sessionDrivers } from 'astro/config';
 import { globSync } from 'glob';
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -14,7 +12,7 @@ import remarkGfm from 'remark-gfm';
 
 import remarkToc from './src/plugins/remark-toc.mjs';
 
-const siteUrl = process.env.SITE_URL || 'https://example.com';
+const siteUrl = process.env.SITE_URL || 'https://www.mandgsecurity.net';
 const projectRoot = dirname(fileURLToPath(import.meta.url));
 
 // Scan pages once at config load for noIndex={true} so we can exclude them
@@ -42,17 +40,6 @@ const noIndexPaths = collectNoIndexPaths();
 export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
-  adapter: cloudflare({
-    imageService: 'passthrough',
-    prerenderEnvironment: 'node',
-  }),
-  // Astro 6 + @astrojs/cloudflare 13 auto-provision a SESSION KV namespace
-  // per deploy. Pinning a non-KV driver tells the adapter "sessions are
-  // handled" so it skips emitting the SESSION binding. Our pages are static
-  // and never call Astro.session at runtime.
-  session: {
-    driver: sessionDrivers.lruCache(),
-  },
   site: siteUrl,
   // CSRF origin check for form-encoded POST/PUT/PATCH/DELETE. This is the
   // Astro 5/6 default; pinned explicitly so a template edit can't silently
