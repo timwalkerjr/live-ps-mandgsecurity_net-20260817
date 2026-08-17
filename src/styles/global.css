@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './icons.css';
+@plugin "@tailwindcss/typography";
+
+:root {
+  --nav-height: 80px;
+
+  --color-background: hsl(0, 0%, 97%);
+  --color-foreground: hsl(217, 51%, 8%);
+  --color-muted-foreground: hsl(220, 9%, 45%);
+  --color-border: hsl(220, 10%, 90%);
+  --color-surface: hsl(0, 0%, 100%);
+  --color-primary: hsl(45, 100%, 43%);
+  --color-primary-foreground: hsl(217, 51%, 8%);
+  --color-primary-hover: hsl(45, 100%, 33%);
+  --color-secondary: hsl(218, 11%, 35%);
+  --color-secondary-foreground: hsl(0, 0%, 100%);
+  --color-dark-background: hsl(215, 51%, 6%);
+  --color-dark-foreground: hsl(260, 0%, 98%);
+  --color-dark-muted-foreground: hsl(220, 9%, 60%);
+  --color-dark-border: hsl(215, 30%, 12%);
+  --color-accent: hsl(45, 100%, 43%);
+
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+
+  --text-h1: 60px;
+  --text-h2: 48px;
+  --text-h3: 18px;
+  --text-h1: clamp(2rem, 0.9rem + 3.6vw, 4rem);
+  --text-h2: clamp(1.625rem, 1.1rem + 1.8vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 1.05rem + 0.7vw, 1.625rem);
+}
+
+@theme {
+  --font-heading: var(--font-heading);
+  --font-sans: var(--font-sans);
+
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-surface: var(--color-surface);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-primary-hover: var(--color-primary-hover);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+
+  --color-dark-background: var(--color-dark-background);
+  --color-dark-foreground: var(--color-dark-foreground);
+  --color-dark-muted-foreground: var(--color-dark-muted-foreground);
+  --color-dark-border: var(--color-dark-border);
+  
+  --color-dark: var(--color-dark-background);
+  --color-dark-muted: var(--color-dark-muted-foreground);
+
+  --text-h1: var(--text-h1);
+  --text-h2: var(--text-h2);
+  --text-h3: var(--text-h3);
+}
+
+html,
+body {
+  overflow-x: clip;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-padding-top: var(--nav-height);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}

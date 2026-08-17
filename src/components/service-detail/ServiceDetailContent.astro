@@ -1,0 +1,90 @@
+---
+export interface Props {
+  serviceName: string;
+  paragraphs: string[];
+  provides: string[];
+}
+
+const { serviceName, paragraphs, provides } = Astro.props;
+
+const whyChoose = [
+  'KRE Security LLC. is bonded and insured to provide the services offered to our clients.',
+  'KRE Security LLC. conducts every investigation ethically, morally, legally and with the highest degree of integrity.',
+  'KRE Security LLC. was founded in August of 1990 and recently acquired M&G Security expanding our capabilities and footprint in PA.',
+  '24/7 availability for emergencies',
+];
+---
+
+<section id="service-detail" class="bg-background py-24 md:py-32" data-ps="src/components/service-detail/ServiceDetailContent.astro:tl8s3t">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4um">
+    <!-- Main content -->
+    <div class="lg:col-span-2" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4ul">
+      <div class="space-y-6" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4uk">
+        {
+          paragraphs.map((p, __psIdx) => (
+            <p class="text-[16px] leading-[28px] text-muted-foreground" data-ps={`src/components/service-detail/ServiceDetailContent.astro:xgzy0e-${__psIdx}`}>{p}</p>
+          ))
+        }
+      </div>
+
+      <div class="mt-14 bg-surface border border-gray-100 p-8 rounded-none shadow-sm" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4uj">
+        <div class="w-6 h-0.5 bg-primary mb-4" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4ui"></div>
+        <h3 class="text-[18px] font-bold text-foreground uppercase tracking-wide mb-6" data-ps="src/components/service-detail/ServiceDetailContent.astro:tiogxc">
+          What M&amp;G Provides
+        </h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+          {
+            provides.map((item, __psIdx) => (
+              <li class="flex items-start gap-3 text-[14px] leading-[22px] text-muted-foreground" data-ps={`src/components/service-detail/ServiceDetailContent.astro:e3an7z-${__psIdx}`}>
+                <i class="ri-shield-check-line text-primary text-base mt-0.5 shrink-0" aria-hidden="true" />
+                <span data-ps={`src/components/service-detail/ServiceDetailContent.astro:q0bkuu-${__psIdx}`}>{item}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="lg:sticky lg:top-28 flex flex-col gap-8" data-ps="src/components/service-detail/ServiceDetailContent.astro:c2spnm">
+      <div class="bg-dark-background p-8 rounded-none" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4uh">
+        <h4 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-4" data-ps="src/components/service-detail/ServiceDetailContent.astro:qu0nu6">
+          Request This Service
+        </h4>
+        <p class="text-[14px] leading-relaxed text-dark-muted-foreground mb-6" data-ps="src/components/service-detail/ServiceDetailContent.astro:xgzy0d">
+          Contact M&amp;G Security today for a tailored security assessment and quote for your {serviceName.toLowerCase()} needs.
+        </p>
+        <div class="flex flex-col gap-3" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4ug">
+          <a
+            href="tel:+16105620971"
+            class="bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-6 py-3 rounded-none hover:bg-primary-hover transition-colors flex items-center justify-center gap-2"
+           data-ps="src/components/service-detail/ServiceDetailContent.astro:qd21ao">
+            <i class="ri-phone-line" aria-hidden="true"></i> Call (610) 562-0971
+          </a>
+          <a
+            href="/contact-us/"
+            class="border border-dark-border text-dark-foreground font-bold uppercase tracking-wider text-[12px] px-6 py-3 rounded-none hover:bg-white/5 transition-colors flex items-center justify-center gap-2"
+           data-ps="src/components/service-detail/ServiceDetailContent.astro:qd21an">
+            <i class="ri-mail-line" aria-hidden="true"></i> Request a Quote
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-surface border border-gray-100 p-8 rounded-none shadow-sm" data-ps="src/components/service-detail/ServiceDetailContent.astro:ctu4uf">
+        <h4 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-6" data-ps="src/components/service-detail/ServiceDetailContent.astro:qu0nu7">
+          Why Choose M&amp;G
+        </h4>
+        <ul class="flex flex-col gap-4">
+          {
+            whyChoose.map((item, __psIdx) => (
+              <li class="flex items-start gap-3 text-[14px] leading-[22px] text-muted-foreground" data-ps={`src/components/service-detail/ServiceDetailContent.astro:e3an7d-${__psIdx}`}>
+                <i class="ri-check-line text-primary text-base mt-0.5 shrink-0" aria-hidden="true" />
+                <span data-ps={`src/components/service-detail/ServiceDetailContent.astro:q0bkut-${__psIdx}`}>{item}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

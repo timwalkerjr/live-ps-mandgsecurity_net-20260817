@@ -1,0 +1,60 @@
+---
+import Container from '@/components/Container.astro';
+
+const bgImage = "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-1536.webp";
+---
+
+<section id="hero" class="relative min-h-0 flex items-center pt-[80px] overflow-hidden bg-dark-background" data-ps="src/components/home/Hero.astro:hero">
+  <!-- Background with Overlay -->
+  <div class="absolute inset-0 z-0" data-ps="src/components/home/Hero.astro:bg">
+    <img 
+      src={bgImage} 
+      alt="Professional security operations" 
+      class="w-full h-full object-cover opacity-30" 
+      loading="eager"
+      fetchpriority="high" data-ps="src/components/home/Hero.astro:fibi80" />
+    <div class="absolute inset-0 bg-dark-background/80" data-ps="src/components/home/Hero.astro:overlay1"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-dark-background/20 via-transparent to-dark-background" data-ps="src/components/home/Hero.astro:overlay2"></div>
+  </div>
+
+  <Container class="relative z-10 pt-[50px] md:pt-[70px] pb-6 md:pb-8 flex flex-col items-center text-center">
+    <div class="flex items-center gap-2 mb-6" data-ps="src/components/home/Hero.astro:subtitle">
+      <div class="w-1.5 h-4 bg-primary" data-ps="src/components/home/Hero.astro:ecxgf9"></div>
+      <span class="text-primary text-[12px] uppercase font-bold tracking-[0.2em]" data-ps="src/components/home/Hero.astro:z1i1wh">ON CALL 24/7</span>
+    </div>
+
+    <h1 class="text-[42px] md:text-[60px] leading-[1] font-bold uppercase tracking-tight text-dark-foreground mb-8 max-w-4xl" data-ps="src/components/home/Hero.astro:h1">
+      THE MOST TRUSTED <span class="text-primary" data-ps="src/components/home/Hero.astro:z1i1wg">SECURITY PROVIDER</span> IN BERKS COUNTY
+    </h1>
+
+    <p class="text-[16px] leading-[26px] text-dark-muted-foreground max-w-[720px] mb-12" data-ps="src/components/home/Hero.astro:p">
+      M&G Security is a Pennsylvania-based security company founded in 1997 by former law enforcement officers. Our active and retired police staff bring over 60 years of combined law enforcement experience to every assignment.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-14" data-ps="src/components/home/Hero.astro:ctas">
+      <a href="tel:+16105620971" class="flex items-center justify-center gap-2 bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-5 rounded-none hover:bg-primary-hover transition-colors" data-ps="src/components/home/Hero.astro:8zc2t">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        (610) 562-0971
+      </a>
+      <a href="/contact-us/" class="flex items-center justify-center gap-2 border border-dark-border text-dark-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-5 rounded-none hover:bg-white/5 transition-colors" data-ps="src/components/home/Hero.astro:8zc2u">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+Contact Us
+</a>
+    </div>
+
+    <div class="w-full max-w-4xl border-t border-dark-border pt-10 grid grid-cols-1 md:grid-cols-3 gap-8" data-ps="src/components/home/Hero.astro:stats">
+      <div class="flex flex-col items-center" data-ps="src/components/home/Hero.astro:ecxgfa">
+        <span class="text-primary text-[48px] font-bold leading-none mb-2" data-ps="src/components/home/Hero.astro:z1i1wf">24/7</span>
+        <span class="text-dark-muted-foreground text-[11px] font-bold uppercase tracking-[0.2em]" data-ps="src/components/home/Hero.astro:3f6ipl">ALWAYS ON CALL</span>
+      </div>
+      <div class="flex flex-col items-center" data-ps="src/components/home/Hero.astro:ecxgfb">
+        <span class="text-primary text-[48px] font-bold leading-none mb-2" data-ps="src/components/home/Hero.astro:3f6ipk">60+</span>
+        <span class="text-dark-muted-foreground text-[11px] font-bold uppercase tracking-[0.2em]" data-ps="src/components/home/Hero.astro:3f6ipj">YEARS LAW ENFORCEMENT EXPERIENCE</span>
+      </div>
+      <div class="flex flex-col items-center" data-ps="src/components/home/Hero.astro:ecxgfc">
+        <span class="text-primary text-[48px] font-bold leading-none mb-2" data-ps="src/components/home/Hero.astro:3f6ipi">1997</span>
+        <span class="text-dark-muted-foreground text-[11px] font-bold uppercase tracking-[0.2em]" data-ps="src/components/home/Hero.astro:3f6iph">SERVING BERKS COUNTY</span>
+      </div>
+    </div>
+  </Container>
+</section>

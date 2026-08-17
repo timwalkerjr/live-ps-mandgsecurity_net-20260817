@@ -1,0 +1,56 @@
+---
+import Container from '@/components/Container.astro';
+
+const guardImg = "https://pagesmith-cdn.com/f57c14f2/images/a058a2f1cba0127ec1d47bef14807be2-768.webp";
+---
+
+<section id="about" class="py-24 md:py-32 bg-dark-background text-dark-muted-foreground" data-ps="src/components/home/About.astro:section">
+  <Container>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-20 items-center max-w-7xl mx-auto" data-ps="src/components/home/About.astro:grid">
+      <!-- Left: Image -->
+      <div class="w-full h-[450px] lg:h-[660px] relative overflow-hidden" data-ps="src/components/home/About.astro:img-wrap">
+        <img 
+          src={guardImg} 
+          alt="M&G Security professional guard" 
+          class="w-full h-full object-cover"
+          loading="lazy" data-ps="src/components/home/About.astro:riqacx" />
+      </div>
+
+      <!-- Right: Content -->
+      <div class="flex flex-col" data-ps="src/components/home/About.astro:content">
+        <div class="w-6 h-0.5 bg-primary mb-4" data-ps="src/components/home/About.astro:dn4syy"></div>
+        <span class="text-primary text-[10px] uppercase font-bold tracking-[0.2em] mb-4" data-ps="src/components/home/About.astro:mzecss">OUR STORY</span>
+        <h2 class="text-[32px] leading-[1.2] font-bold uppercase tracking-tight text-dark-foreground mb-8" data-ps="src/components/home/About.astro:h2">
+          FOUNDED BY LAW ENFORCEMENT, BUILT ON TRUST
+        </h2>
+
+        <p class="text-[16px] leading-[24px] mb-6" data-ps="src/components/home/About.astro:p1">
+          M&G Security was founded in 1997 by former Reading Police Sergeant <span class="text-dark-foreground font-bold" data-ps="src/components/home/About.astro:mzecst">Mark N. Pellicciotti</span> and retired Pennsylvania State Trooper <span class="text-dark-foreground font-bold" data-ps="src/components/home/About.astro:mzecsu">Anthony DiGuglielmo</span>.
+        </p>
+
+        <p class="text-[16px] leading-[24px] mb-6" data-ps="src/components/home/About.astro:p2">
+          Our staff consists of active and retired law enforcement personnel with over <span class="text-primary font-bold" data-ps="src/components/home/About.astro:mzecsv">60 years of combined experience</span>. We have been proudly serving Berks County and surrounding areas for over 27 years.
+        </p>
+
+        <p class="text-[16px] leading-[24px] text-dark-muted-foreground/80 mb-12" data-ps="src/components/home/About.astro:p3">
+          From the Santander Arena to local construction sites, high school proms to corporate offices, we bring the discipline, training, and professionalism of law enforcement to every assignment.
+        </p>
+
+        <div class="grid grid-cols-3 gap-8 pt-10 border-t border-dark-border" data-ps="src/components/home/About.astro:stats">
+          <div class="flex flex-col" data-ps="src/components/home/About.astro:dn4syx">
+            <span class="text-primary text-[32px] font-bold leading-none mb-2" data-ps="src/components/home/About.astro:mzecsw">1997</span>
+            <span class="text-dark-muted-foreground text-[10px] uppercase tracking-[0.15em] font-bold" data-ps="src/components/home/About.astro:7m5i0o">FOUNDED</span>
+          </div>
+          <div class="flex flex-col" data-ps="src/components/home/About.astro:dn4syw">
+            <span class="text-primary text-[32px] font-bold leading-none mb-2" data-ps="src/components/home/About.astro:7m5i0p">60+</span>
+            <span class="text-dark-muted-foreground text-[10px] uppercase tracking-[0.15em] font-bold" data-ps="src/components/home/About.astro:7m5i0q">YEARS LEO EXP.</span>
+          </div>
+          <div class="flex flex-col" data-ps="src/components/home/About.astro:dn4syv">
+            <span class="text-primary text-[32px] font-bold leading-none mb-2" data-ps="src/components/home/About.astro:7m5i0r">27+</span>
+            <span class="text-dark-muted-foreground text-[10px] uppercase tracking-[0.15em] font-bold" data-ps="src/components/home/About.astro:7m5i0s">YEARS IN BERKS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SportHero from '@/components/security-services/SportHero.astro';
+import ServiceContent from '@/components/security-services/ServiceContent.astro';
+import ServiceCTA from '@/components/security-services/ServiceCTA.astro';
+import { SITE } from '@/config/site';
+
+const paragraphs = [
+  "M&amp;G Security handles private investigations that are fitted to your needs. We handle domestic cases, family matters, workers comp cases and surveillance. Our licensed investigators serve individuals, attorneys, insurance companies, and businesses throughout Pennsylvania with thorough, legally sound investigative work.",
+  "Our investigative division is led by experienced professionals with backgrounds in law enforcement and criminal investigation. We understand the legal standards required for evidence collection, chain of custody, and court-ready documentation. Every case receives the same meticulous attention, whether it's a simple background check or a complex surveillance operation.",
+  "We maintain strict confidentiality in all investigations. Our clients include law firms seeking witness location and asset verification, insurance companies investigating fraud claims, and individuals dealing with sensitive personal matters. We provide clear, detailed reports and are available to testify in court when needed.",
+];
+
+const bullets = [
+  "Surveillance and witness location",
+  "Background and asset checks",
+  "Accident investigation and reconstruction",
+  "Insurance fraud investigation",
+  "Child custody and divorce case support",
+  "Workers' compensation verification",
+  "Missing person and skip tracing",
+  "Court testimony and legal documentation",
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Private Investigation Services",
+      "serviceType": "Private Investigation & Surveillance",
+      "description": "Licensed private investigators serving individuals, attorneys, and businesses throughout Pennsylvania. Discreet surveillance, background checks, and fraud investigation.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Pennsylvania"
+      },
+      "url": new URL('/security-services/private-investigation/', SITE.url).toString()
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Security Services",
+          "item": new URL('/security-services/', SITE.url).toString()
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Private Investigation",
+          "item": new URL('/security-services/private-investigation/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Private Investigation Services | M&G Security Berks County"
+  description="Licensed private investigators serving individuals, attorneys, and businesses throughout Pennsylvania. Discreet surveillance, background checks, and fraud investigation."
+  jsonLd={jsonLd}
+>
+  <SportHero
+    title="Private investigation"
+    subtitle="Our discreet private investigators can find the information you need"
+    breadcrumb="Private investigation"
+    bgImage="https://images.pexels.com/photos/10480632/pexels-photo-10480632.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  />
+  <ServiceContent
+    title="Private investigation"
+    paragraphs={paragraphs}
+    bullets={bullets}
+    serviceShortName="private investigation"
+  />
+  <ServiceCTA title="Private investigation" />
+</BaseLayout>

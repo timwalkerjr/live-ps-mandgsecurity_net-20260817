@@ -1,0 +1,83 @@
+---
+import Container from '@/components/Container.astro';
+import { SITE } from '@/config/site';
+
+const navLinks = [
+  { label: 'HOME', href: '/' },
+  { label: 'SECURITY SERVICES', href: '/security-services/' },
+  { label: 'ABOUT US', href: '/about-us/' },
+  { label: 'ARTICLES', href: '/articles/' },
+  { label: 'PHOTO GALLERY', href: '/photo-gallery/' },
+  { label: 'CONTACT US', href: '/contact-us/' },
+  { label: 'EMPLOYMENT', href: '/employment-opportunities/' },
+];
+---
+
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-dark-background/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.15)] h-[80px]" data-ps="src/components/Navigation.astro:header">
+  <nav class="h-full" data-ps="src/components/Navigation.astro:nav">
+    <Container class="flex justify-between items-center h-full">
+      <div class="flex items-center gap-2 md:gap-3 shrink-0 mr-8 lg:mr-12 xl:mr-14" data-ps="src/components/Navigation.astro:logo-group">
+        <a href="/" class="block" data-ps="src/components/Navigation.astro:logo">
+          <img src={SITE.logoSrc} alt={SITE.name} class="w-[100px] md:w-[115px] h-[36px] md:h-[38px] object-contain" data-ps="src/components/Navigation.astro:d4d69v" />
+        </a>
+        <div class="h-6 w-px bg-dark-border hidden sm:block" data-ps="src/components/Navigation.astro:gqvsde"></div>
+        <a href="https://www.kresecurity.com/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:opacity-90 transition-opacity" data-ps="src/components/Navigation.astro:partner-logo">
+          <img src="https://pagesmith-cdn.com/f57c14f2/images/KRE-logo-2026-1024-1024.webp" alt="KRE Security LLC" class="h-[36px] md:h-[38px] w-auto object-contain shrink-0" data-ps="src/components/Navigation.astro:partner-img" />
+          <span class="text-[9px] md:text-[10px] text-dark-foreground/80 leading-tight max-w-[130px] font-sans" data-ps="src/components/Navigation.astro:i2om6i">Owned and Operated by KRE Securities, LLC</span>
+        </a>
+      </div>
+
+      <div class="hidden lg:flex items-center justify-between flex-1 min-w-0" data-ps="src/components/Navigation.astro:menu">
+        <div class="flex items-center gap-0.5 xl:gap-1.5 flex-nowrap" data-ps="src/components/Navigation.astro:links-wrap">
+          {navLinks.map((link, __psIdx) => (
+            <a 
+              href={link.href} 
+              class={`text-[10.5px] xl:text-[11px] font-bold font-heading uppercase tracking-[0.1em] xl:tracking-[0.14em] px-2 xl:px-2.5 py-2 transition-colors whitespace-nowrap ${link.href === '/' ? 'text-primary' : 'text-dark-foreground/90 hover:text-primary'}`}
+             data-ps={`src/components/Navigation.astro:kd8n5w-${__psIdx}`}>
+              {link.label}
+            </a>
+          ))}
+        </div>
+        
+        <div class="flex items-center ml-3 xl:ml-6 shrink-0" data-ps="src/components/Navigation.astro:actions">
+          <a href={SITE.phoneHref} class="hidden lg:flex text-dark-foreground text-[16px] xl:text-[17px] font-bold items-center gap-2 hover:text-primary transition-colors whitespace-nowrap" data-ps="src/components/Navigation.astro:kd8n5v">
+            <svg class="w-4.5 h-4.5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            {SITE.phone}
+          </a>
+        </div>
+      </div>
+
+      <button
+        id="mobile-menu-button"
+        type="button"
+        class="lg:hidden p-2 text-dark-foreground hover:text-primary transition-colors ml-auto"
+        aria-label="Toggle menu"
+       data-ps="src/components/Navigation.astro:toggle">
+        <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+      </button>
+    </Container>
+  </nav>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-dark-background border-t border-dark-border" data-ps="src/components/Navigation.astro:mobile">
+    <nav class="flex flex-col py-4 px-6 gap-2" data-ps="src/components/Navigation.astro:m59h36">
+      {navLinks.map((link, __psIdx) => (
+        <a href={link.href} class="text-dark-foreground/90 font-bold py-3 text-[12px] uppercase tracking-wider hover:text-primary" data-ps={`src/components/Navigation.astro:kd8n5t-${__psIdx}`}>{link.label}</a>
+      ))}
+      <div class="pt-2 border-t border-dark-border/40 flex flex-col gap-3" data-ps="src/components/Navigation.astro:gqvsde">
+        <a href={SITE.phoneHref} class="text-dark-foreground text-[16px] font-bold flex items-center gap-2 hover:text-primary transition-colors py-2" data-ps="src/components/Navigation.astro:kd8n5r">
+          <svg class="w-4.5 h-4.5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          {SITE.phone}
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

@@ -1,0 +1,59 @@
+---
+import Container from '@/components/Container.astro';
+
+const testimonials = [
+  {
+    name: 'Mr. Tom Doyle',
+    role: 'Activities Chairman, Immaculate Conception Church',
+    text: 'Thousands of people attend our festival in a short period of time. M&G Security handles the crowds in a very professional manner. It is great to have these guards on site.',
+    avatar: 'https://pagesmith-cdn.com/f57c14f2/images/6f789f590545fc92c6e48802d5ae4d41-320.webp'
+  },
+  {
+    name: 'Charles Mountcastle III',
+    role: "Monty's Construction",
+    text: 'I hire M&G Security to cover all of my construction sites. I have not had any thefts or damage to any of my equipment since they have taken over on site security.',
+    avatar: 'https://pagesmith-cdn.com/f57c14f2/images/7b2750c824349298f38e0e0245fd876e-320.webp'
+  },
+  {
+    name: 'Beth Hiem',
+    role: 'Apartment Complex Manager',
+    text: 'The guards at M&G Security handle the residents complaints in a very professional and courteous manner. They are a great asset to the complex.',
+    avatar: 'https://pagesmith-cdn.com/f57c14f2/images/e4d5820333107c8d13d5826f7f6fcc50-320.webp'
+  }
+];
+---
+
+<section id="testimonials" class="py-24 md:py-32 bg-[#F2F2F2]" data-ps="src/components/home/Testimonials.astro:section">
+  <Container class="flex flex-col items-center">
+    <div class="flex flex-col items-center text-center mb-20" data-ps="src/components/home/Testimonials.astro:header">
+      <div class="w-6 h-0.5 bg-primary mb-4" data-ps="src/components/home/Testimonials.astro:jqcpxx"></div>
+      <span class="text-primary text-[10px] uppercase font-bold tracking-[0.2em] mb-4" data-ps="src/components/home/Testimonials.astro:jsx5ki">TESTIMONIALS</span>
+      <h2 class="text-[36px] leading-[1] font-bold uppercase tracking-tight text-foreground mb-6" data-ps="src/components/home/Testimonials.astro:h2">
+        WHAT OUR CLIENTS SAY
+      </h2>
+      <p class="text-[16px] leading-[24px] text-muted-foreground max-w-2xl" data-ps="src/components/home/Testimonials.astro:p">
+        Real feedback from the businesses, schools, and organizations we protect across Berks County.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl w-full" data-ps="src/components/home/Testimonials.astro:grid">
+      {testimonials.map((t, __psIdx) => (
+        <article class="bg-surface border border-gray-100 p-8 flex flex-col shadow-sm" data-ps="src/components/home/Testimonials.astro:card">
+          <div class="flex items-center gap-4 mb-6" data-ps={`src/components/home/Testimonials.astro:jqcpxw-${__psIdx}`}>
+            <img src={t.avatar} alt={t.name} class="w-12 h-12 rounded-full object-cover" data-ps={`src/components/home/Testimonials.astro:lfiddy-${__psIdx}`} />
+            <div class="flex flex-col" data-ps={`src/components/home/Testimonials.astro:jqcpxv-${__psIdx}`}>
+              <span class="text-foreground text-[14px] font-bold uppercase tracking-wide" data-ps={`src/components/home/Testimonials.astro:jsx5kh-${__psIdx}`}>{t.name}</span>
+              <span class="text-muted-foreground text-[11px]" data-ps={`src/components/home/Testimonials.astro:jsx5kg-${__psIdx}`}>{t.role}</span>
+            </div>
+          </div>
+          <p class="text-[15px] italic text-muted-foreground leading-relaxed mb-6 flex-grow" data-ps={`src/components/home/Testimonials.astro:q9h2qz-${__psIdx}`}>"{t.text}"</p>
+          <div class="flex gap-1 text-primary text-sm" data-ps={`src/components/home/Testimonials.astro:jqcpxu-${__psIdx}`}>
+            {[...Array(5)].map(() => (
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </Container>
+</section>

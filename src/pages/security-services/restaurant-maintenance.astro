@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SportHero from '@/components/security-services/SportHero.astro';
+import ServiceContent from '@/components/security-services/ServiceContent.astro';
+import ServiceCTA from '@/components/security-services/ServiceCTA.astro';
+import { SITE } from '@/config/site';
+
+const paragraphs = [
+  "Several major restaurant Chains have contracted to M&amp;G Security to provide services after hours. When the dining room closes, we step in and provide a high quality of security service while routine maintenance is being provided.",
+  "Our personnel will work those late night hours so that management and staff can go home and relax knowing that their restaurant is in safe hands.",
+  "Overnight break-ins, vandalism, and theft of alcohol, equipment, and cash are persistent risks for hospitality businesses. Our guards provide visible deterrence, patrol interior and exterior spaces, monitor loading docks and delivery areas, and respond immediately to alarm activations or suspicious activity.",
+];
+
+const bullets = [
+  "Overnight and after-hours patrols",
+  "Maintenance period site security",
+  "Delivery and loading dock monitoring",
+  "Alcohol and inventory protection",
+  "Vandalism and break-in deterrence",
+  "Keyholder and alarm response",
+  "Contractor access control",
+  "Interior and exterior perimeter checks",
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Restaurant Maintenance Security",
+      "serviceType": "Hospitality & After-Hours Commercial Security",
+      "description": "Overnight and after-hours security for restaurants and hospitality venues across Berks County, PA. M&G Security protects your establishment during vulnerable hours.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Berks County, PA"
+      },
+      "url": new URL('/security-services/restaurant-maintenance/', SITE.url).toString()
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Security Services",
+          "item": new URL('/security-services/', SITE.url).toString()
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Restaurant Maintenance Security",
+          "item": new URL('/security-services/restaurant-maintenance/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Restaurant Maintenance Security | M&G Security Berks County"
+  description="Overnight and after-hours security for restaurants and hospitality venues across Berks County, PA. M&G Security protects your establishment during vulnerable hours."
+  jsonLd={jsonLd}
+>
+  <SportHero
+    title="Restaurant maintenance security"
+    subtitle="We'll keep your restaurant safe after hours"
+    breadcrumb="Restaurant maintenance security"
+    bgImage="https://images.pexels.com/photos/15751615/pexels-photo-15751615.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  />
+  <ServiceContent
+    title="Restaurant maintenance security"
+    paragraphs={paragraphs}
+    bullets={bullets}
+    serviceShortName="restaurant maintenance"
+  />
+  <ServiceCTA title="Restaurant maintenance security" />
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+const bgImage = "https://pagesmith-cdn.com/f57c14f2/images/cinematic-wide-shot-of-professional-corporate-and-event-secu-b6f6806f-1024.webp";
+---
+
+<section
+  id="services-hero"
+  class="relative bg-dark-background overflow-hidden"
+  data-ps="src/components/security-services/ServicesHero.astro:section"
+>
+  <!-- Background Image with Dark Overlay -->
+  <div class="absolute inset-0 z-0" data-ps="src/components/security-services/ServicesHero.astro:1hjhhn">
+    <img 
+      src={bgImage} 
+      alt="Professional Security Services" 
+      class="w-full h-full object-cover opacity-35" 
+      loading="eager"
+      fetchpriority="high" data-ps="src/components/security-services/ServicesHero.astro:vcsg4w" />
+    <div class="absolute inset-0 bg-gradient-to-t from-dark-background via-dark-background/65 to-dark-background/75" data-ps="src/components/security-services/ServicesHero.astro:1hjhhm"></div>
+  </div>
+
+  <div
+    class="absolute inset-0 pointer-events-none z-0"
+    style="background: radial-gradient(at 100% 0%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 55%);"
+   data-ps="src/components/security-services/ServicesHero.astro:1hjhhk">
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 pt-[140px] pb-[60px] md:pt-[160px] md:pb-[80px] flex flex-col items-center text-center" data-ps="src/components/security-services/ServicesHero.astro:1hjhhj">
+    <div class="flex items-center gap-2 mb-6" data-ps="src/components/security-services/ServicesHero.astro:1hjhhi">
+      <span class="w-1.5 h-4 bg-primary block" data-ps="src/components/security-services/ServicesHero.astro:r47iha"></span>
+      <span class="text-[12px] uppercase font-bold tracking-widest text-primary" data-ps="src/components/security-services/ServicesHero.astro:r47ihb">Our Services</span>
+    </div>
+
+    <h1 class="text-[40px] leading-[44px] md:text-[60px] md:leading-[60px] font-bold uppercase tracking-tight text-dark-foreground max-w-[900px]" data-ps="src/components/security-services/ServicesHero.astro:3mmb0b">
+      Professional Security <span class="text-primary" data-ps="src/components/security-services/ServicesHero.astro:v7c1gn">for Every Need</span>
+    </h1>
+
+    <p class="text-[16px] leading-[26px] text-dark-muted-foreground max-w-[720px] mx-auto mt-6" data-ps="src/components/security-services/ServicesHero.astro:cj9aks">
+      M&amp;G Security provides comprehensive security services for events, construction sites,
+      corporate properties, and more. Our team of active and retired law enforcement officers
+      brings unmatched professionalism to every assignment.
+    </p>
+  </div>
+</section>

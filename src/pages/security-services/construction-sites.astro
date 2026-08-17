@@ -1,0 +1,97 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ServiceDetailHero from '@/components/service-detail/ServiceDetailHero.astro';
+import ServiceDetailContent from '@/components/service-detail/ServiceDetailContent.astro';
+import ServicesCTA from '@/components/security-services/ServicesCTA.astro';
+import { SITE } from '@/config/site';
+
+const paragraphs = [
+  "Our security guards are cross trained to provide you the best possible services. In today's environment, criminals are not only stealing heavy equipment but also precious metals. Theft of copper wire, equipment, tools and vandalism to job sites is why it is cost effective to hire M&G Security to protect your assets.",
+  "A single theft incident can cost a contractor thousands of dollars in lost equipment and project delays. Our guards maintain a visible presence that deters criminals, patrol the perimeter to spot unauthorized access, and document all activity so you have a clear record of site security.",
+  "M&G Security has protected construction sites for Monty's Construction and other contractors throughout Berks County. Our team understands the rhythms of construction work — we coordinate with site supervisors, respect active work zones, and adjust our patrol patterns to match your project schedule.",
+];
+
+const provides = [
+  'After-hours and overnight patrols',
+  'Equipment and material theft prevention',
+  'Vandalism and trespassing deterrence',
+  'Contractor and subcontractor access control',
+  'Fire watch and safety observation',
+  'Incident reporting and documentation',
+  'Perimeter fence and gate monitoring',
+  'Coordination with site supervisors',
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Construction Site Security",
+      "serviceType": "Construction Site Security & Patrol",
+      "description": "M&G Security protects construction sites across Berks County, PA from equipment theft and vandalism with after-hours patrols and access control.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Berks County, PA"
+      },
+      "url": new URL('/security-services/construction-sites/', SITE.url).toString()
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Security Services",
+          "item": new URL('/security-services/', SITE.url).toString()
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Construction Site Security",
+          "item": new URL('/security-services/construction-sites/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Construction Site Security — M&G Security, Berks County PA"
+  description="M&G Security protects construction sites across Berks County, PA from equipment theft and vandalism with after-hours patrols and access control."
+  jsonLd={jsonLd}
+>
+  <ServiceDetailHero
+    title="Construction site security"
+    subtitle="We'll keep your construction site safe"
+    bgImage="https://images.pexels.com/photos/35632880/pexels-photo-35632880.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  />
+  <ServiceDetailContent
+    serviceName="construction site security"
+    paragraphs={paragraphs}
+    provides={provides}
+  />
+  <ServicesCTA heading="Need Construction site security?" />
+</BaseLayout>

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+---
+
+<BaseLayout
+  title={`Page Not Found – ${SITE.name}`}
+  description="The page you requested could not be found."
+>
+  <div class="mx-auto flex max-w-3xl flex-col items-center px-6 py-24 text-center" data-ps="src/pages/404.astro:1lpvpb">
+    <p class="mb-4 text-sm font-semibold text-primary" data-ps="src/pages/404.astro:yo4nuo">404</p>
+    <h1 class="mb-4 text-h1 font-bold tracking-tight" data-ps="src/pages/404.astro:kwsrw8">Page not found</h1>
+    <p class="mb-8" data-ps="src/pages/404.astro:yo4nup">Sorry, we couldn't find the page you're looking for.</p>
+    <div class="flex gap-3" data-ps="src/pages/404.astro:1lpvpa">
+      <a href="/" class="rounded-md bg-primary px-4 py-2 text-primary-foreground shadow transition-colors hover:bg-primary-hover" data-ps="src/pages/404.astro:ywdvvh">Go back home</a>
+    </div>
+  </div>
+</BaseLayout>

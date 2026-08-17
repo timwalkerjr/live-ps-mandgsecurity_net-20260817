@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section id="cta" class="relative bg-dark-background py-20 overflow-hidden" data-ps="src/components/security-services/ServiceCTA.astro:vxtyaz">
+  <div class="absolute inset-0 bg-[radial-gradient(at_75%_50%,oklch(0.75_0.16_85/0.1),rgba(0,0,0,0)_60%)]" data-ps="src/components/security-services/ServiceCTA.astro:5nehrg"></div>
+  <div class="relative max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8" data-ps="src/components/security-services/ServiceCTA.astro:5nehrf">
+    <div data-ps="src/components/security-services/ServiceCTA.astro:5nehre">
+      <h2 class="text-dark-foreground text-[36px] leading-[44px] font-bold uppercase tracking-tight" data-ps="src/components/security-services/ServiceCTA.astro:eb7mre">
+        Need {title}?
+      </h2>
+      <p class="mt-4 text-dark-muted-foreground text-[16px] leading-[24px] max-w-3xl" data-ps="src/components/security-services/ServiceCTA.astro:f1o58z">
+        Contact us today for a tailored security assessment and quote. Our team is ready to protect your people, property, and peace of mind.
+      </p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4" data-ps="src/components/security-services/ServiceCTA.astro:5nehrd">
+      <a href="tel:+16105620971" class="bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none hover:bg-primary-hover transition-colors flex items-center justify-center gap-2" data-ps="src/components/security-services/ServiceCTA.astro:f9xd9r">
+        <i class="ri-phone-line"></i>
+        Call (610) 562-0971
+      </a>
+      <a href="/contact-us/" class="border border-dark-foreground/30 text-dark-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none hover:bg-white/5 transition-colors flex items-center justify-center gap-2" data-ps="src/components/security-services/ServiceCTA.astro:f9xd9s">
+        <i class="ri-mail-line"></i>
+        Request a Quote
+      </a>
+    </div>
+  </div>
+</section>

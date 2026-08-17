@@ -1,0 +1,87 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Thank You — M&G Security",
+  "description": "Thank you for contacting M&G Security. We have received your message and will be in touch shortly.",
+  "url": new URL('/thank-you/', SITE.url).toString()
+};
+---
+
+<BaseLayout
+  title={`Message Received — ${SITE.name}`}
+  description="Thank you for contacting M&G Security. We have received your submission and will get back to you promptly."
+  noIndex={true}
+  jsonLd={jsonLd}
+>
+  <section class="bg-dark-background min-h-[75vh] flex items-center py-20 md:py-28 relative overflow-hidden" data-ps="src/pages/thank-you.astro:etzgy5">
+    <div
+      class="absolute inset-0 pointer-events-none"
+      style="background: radial-gradient(at 50% 40%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 65%);"
+     data-ps="src/pages/thank-you.astro:2jw5rq"></div>
+
+    <div class="max-w-3xl mx-auto px-6 relative z-10 text-center w-full" data-ps="src/pages/thank-you.astro:2jw5rr">
+      <!-- Status Icon -->
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-primary/10 border border-primary/30 rounded-none mb-8 text-primary" data-ps="src/pages/thank-you.astro:2jw5rs">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+
+      <div class="mb-6 inline-flex flex-col items-center" data-ps="src/pages/thank-you.astro:2jw5rt">
+        <span class="w-8 h-0.5 bg-primary mb-4 mx-auto" data-ps="src/pages/thank-you.astro:j3294t"></span>
+        <span class="text-primary text-[11px] uppercase font-bold tracking-widest" data-ps="src/pages/thank-you.astro:j3294s">Submission Received</span>
+      </div>
+
+      <h1 class="text-[34px] sm:text-[44px] md:text-[52px] leading-[1.15] font-bold uppercase tracking-tight text-dark-foreground mb-6" data-ps="src/pages/thank-you.astro:ypbo2z">
+        Thank You For <br class="hidden sm:inline" />
+        <span class="text-primary" data-ps="src/pages/thank-you.astro:j3294r">Contacting Us</span>
+      </h1>
+
+      <p class="text-[17px] leading-[26px] text-dark-muted-foreground max-w-xl mx-auto mb-10" data-ps="src/pages/thank-you.astro:2hhyi6">
+        Your message has been successfully delivered. Our security management team reviews all inquiries promptly and will be in touch within 24 hours.
+      </p>
+
+      <!-- Urgent Dispatch Callout Card -->
+      <div class="bg-dark-background/80 border border-dark-border p-6 md:p-8 rounded-none mb-10 text-left max-w-xl mx-auto" data-ps="src/pages/thank-you.astro:2jw5ru">
+        <div class="flex items-start gap-4" data-ps="src/pages/thank-you.astro:2jw5rv">
+          <div class="text-primary text-2xl pt-1" data-ps="src/pages/thank-you.astro:2jw5rw">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <div data-ps="src/pages/thank-you.astro:2jw5rx">
+            <h2 class="text-dark-foreground font-bold text-sm uppercase tracking-wider mb-1" data-ps="src/pages/thank-you.astro:k0wqve">Require Immediate Security Assistance?</h2>
+            <p class="text-dark-muted-foreground text-xs leading-relaxed mb-3" data-ps="src/pages/thank-you.astro:2hhyi7">For active event coverage or urgent security inquiries, reach our dispatch team directly by phone.</p>
+            <a
+              href={SITE.phoneHref}
+              class="inline-flex items-center gap-2 text-primary hover:text-white font-bold text-base transition-colors"
+             data-ps="src/pages/thank-you.astro:9lfv77">
+              <span data-ps="src/pages/thank-you.astro:j3294q">{SITE.phone}</span>
+              <span class="text-xs uppercase bg-primary/20 text-primary px-2 py-0.5 rounded-none font-semibold" data-ps="src/pages/thank-you.astro:j3294p">24/7 Response</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4" data-ps="src/pages/thank-you.astro:2jw5ry">
+        <a
+          href="/"
+          class="bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none hover:bg-primary-hover transition-colors w-full sm:w-auto inline-flex items-center justify-center"
+         data-ps="src/pages/thank-you.astro:9lfv78">
+          Return to Homepage
+        </a>
+        <a
+          href="/security-services/"
+          class="border border-dark-border bg-dark-background/60 text-dark-foreground hover:border-primary hover:text-primary font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none transition-colors w-full sm:w-auto inline-flex items-center justify-center"
+         data-ps="src/pages/thank-you.astro:9lfv7u">
+          View Security Services
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

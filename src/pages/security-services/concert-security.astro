@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SportHero from '@/components/security-services/SportHero.astro';
+import ServiceContent from '@/components/security-services/ServiceContent.astro';
+import ServiceCTA from '@/components/security-services/ServiceCTA.astro';
+import { SITE } from '@/config/site';
+
+const paragraphs = [
+  "In most every instance when a large public gathering takes place, like a concert with thousands of guests, there are security issues. M&amp;G Security provides professional venue security that keeps performers, staff, and audiences safe so the show goes on without interruption.",
+  "Concert security demands a unique combination of vigilance and customer service. Our guards are trained to spot intoxicated or disruptive individuals, enforce venue policies, and handle medical emergencies while maintaining a professional demeanor that respects concertgoers' experience.",
+  "We have provided security for concerts and live performances at venues throughout southeastern Pennsylvania, including the Santander Arena in Reading. Whether it's a local band at a small venue or a major touring act at a large arena, M&amp;G Security brings the same level of professionalism and preparedness to every show.",
+];
+
+const bullets = [
+  "Entry point screening and ticket verification",
+  "Stage and performer area protection",
+  "Crowd barrier and pit monitoring",
+  "Alcohol and substance enforcement",
+  "Emergency evacuation coordination",
+  "VIP, backstage, and green room security",
+  "Parking lot and tailgate oversight",
+  "Lost and found assistance",
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Concert Security",
+      "serviceType": "Concert & Music Venue Security",
+      "description": "Professional concert and venue security across Berks County, PA. Crowd control, stage protection, and emergency coordination for live performances.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Berks County, PA"
+      },
+      "url": new URL('/security-services/concert-security/', SITE.url).toString()
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Security Services",
+          "item": new URL('/security-services/', SITE.url).toString()
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Concert Security",
+          "item": new URL('/security-services/concert-security/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Concert Security | M&G Security Berks County"
+  description="Professional concert and venue security across Berks County, PA. M&G Security provides crowd control, stage protection, and emergency coordination for live performances."
+  jsonLd={jsonLd}
+>
+  <SportHero
+    title="Concert security"
+    subtitle="We'll keep your concert safe"
+    breadcrumb="Concert security"
+    bgImage="https://images.pexels.com/photos/13230484/pexels-photo-13230484.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  />
+  <ServiceContent
+    title="Concert security"
+    paragraphs={paragraphs}
+    bullets={bullets}
+    serviceShortName="concert"
+  />
+  <ServiceCTA title="Concert security" />
+</BaseLayout>

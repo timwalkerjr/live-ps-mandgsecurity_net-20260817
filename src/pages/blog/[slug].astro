@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogLayout from '@/layouts/BlogLayout.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog', ({ data }) => {
+    return data.draft !== true;
+  });
+
+  return blogEntries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const mdxFilePath = `src/content/blog/${entry.id}.mdx`;
+---
+
+<BlogLayout frontmatter={entry.data} mdxFilePath={mdxFilePath} headings={headings}>
+  <Content />
+</BlogLayout>

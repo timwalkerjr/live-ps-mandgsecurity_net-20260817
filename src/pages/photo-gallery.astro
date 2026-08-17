@@ -1,0 +1,224 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import GalleryHero from '@/components/photo-gallery/GalleryHero.astro';
+import GallerySection from '@/components/photo-gallery/GallerySection.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ImageGallery",
+      "@id": new URL('/photo-gallery/', SITE.url).toString(),
+      "url": new URL('/photo-gallery/', SITE.url).toString(),
+      "name": "Photo Gallery — M&G Security",
+      "description": "Photos from events, construction sites, and venues across Berks County where M&G Security has provided professional protection."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Photo Gallery",
+          "item": new URL('/photo-gallery/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+
+const sections = [
+  {
+    id: 'oktoberfest',
+    title: 'Oktoberfest',
+    description: "Crowd control and gate security across the festival's biggest days — from beer tent watch to wristband checks.",
+    count: 4,
+    images: [
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/5f081689aab2a275bf8b6c01a2a92ed6-768.webp',
+        alt: 'M&G Security watching over the Oktoberfest beer tent crowd',
+        caption: 'Oktoberfest beer tent under the lights',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/8bd1b465df9497674a997ddb5881a5aa-768.webp',
+        alt: 'M&G Security patrolling the Oktoberfest festival grounds',
+        caption: 'Festival grounds during Oktoberfest',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/d3130e4bcee5d1abb5894eac598877a6-768.webp',
+        alt: "M&G Security staff at the Oktoberfest tent entrance",
+        caption: 'Evening crowd inside the Oktoberfest tent',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/d99d5dc47c3e1f998fa9ccedbc00d52b-768.webp',
+        alt: 'M&G Security guard checking wristbands at Oktoberfest',
+        caption: 'Gate check at the Oktoberfest entrance',
+      },
+    ],
+  },
+  {
+    id: 'arena-sporting',
+    title: 'Arena & Sporting Events',
+    description: "Bag checks, concourse direction, and crowd management at Berks County's largest venues.",
+    count: 4,
+    images: [
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/9133c35ded2a0db4fbfd4d346244ce04-768.webp',
+        alt: 'M&G Security stationed along the arena concourse',
+        caption: 'Packed arena during an evening game',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/3b4a503a9746e161028b18a10e6f04c0-768.webp',
+        alt: 'M&G Security guard directing spectators at the arena',
+        caption: 'Directing foot traffic on the arena concourse',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/64f4dc2196c4f28a3a90efb38637ba84-768.webp',
+        alt: 'M&G Security screening guests at a sporting event',
+        caption: 'Bag check at a sporting event entrance',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/abcc6182832db712137c90f047fad941-768.webp',
+        alt: 'M&G Security managing the arena entry line',
+        caption: 'Crowd arriving at the arena at night',
+      },
+    ],
+  },
+  {
+    id: 'school-community',
+    title: 'School & Community Events',
+    description: 'A calm, professional presence at gymnasiums, fields, and campus events across the county.',
+    count: 4,
+    images: [
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/d5e0ff7e1002fb0ba462bff69699ca4c-768.webp',
+        alt: 'M&G Security at a community event in a school gym',
+        caption: 'Community event in a school gymnasium',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/6fbf252eae976843825b4ab054f54c5e-768.webp',
+        alt: 'M&G Security monitoring a school event entrance',
+        caption: 'School campus event entrance',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/6cf869b033b025af085c84fb673fe14f-768.webp',
+        alt: 'M&G Security patrolling a school community festival',
+        caption: 'Outdoor community festival on a school field',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/73c685bcaf7136800f3761d1eb113969-768.webp',
+        alt: 'M&G Security walking a school hallway during an event',
+        caption: 'Evening event in a school hallway',
+      },
+    ],
+  },
+  {
+    id: 'our-team',
+    title: 'Our Team',
+    description: 'Active and retired law enforcement professionals who carry the M&G standard at every post.',
+    count: 4,
+    images: [
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/59c60942db1cc2b52cfc802cf76161c3-768.webp',
+        alt: 'M&G Security team standing at attention',
+        caption: 'Guards standing at attention',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/8dc358d6f0067700fae4b8e0b57efb57-768.webp',
+        alt: 'M&G Security team briefing before a shift',
+        caption: 'Morning team briefing',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/47fd49a30f19b776c40294e1e95ccb89-768.webp',
+        alt: 'M&G Security professional on duty',
+        caption: 'A guard on duty',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/0d45a8919ff48379406f7be994fb47c8-768.webp',
+        alt: 'M&G Security officers walking a patrol together',
+        caption: 'Two guards on patrol together',
+      },
+    ],
+  },
+  {
+    id: 'operations-patrol',
+    title: 'Operations & Patrol',
+    description: 'Night patrols, site checks, and radio coordination that keep properties secure around the clock.',
+    count: 4,
+    images: [
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/244a58fedaad4fc8351a54c5f2551972-768.webp',
+        alt: 'M&G Security patrol vehicle at a commercial site',
+        caption: 'Patrol vehicle at dusk',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/c4bc67b5f2d6aeba7638329f5903b272-768.webp',
+        alt: 'M&G Security guard on a night patrol',
+        caption: 'Night patrol with flashlight',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/b725a61c7ec4212a887fe2d9184dad96-768.webp',
+        alt: 'M&G Security inspecting a construction site perimeter',
+        caption: 'Sunrise site perimeter check',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/3d996319439562f6f57a39c0139689e6-768.webp',
+        alt: 'M&G Security guard coordinating by radio',
+        caption: 'Radio check at a site entrance',
+      },
+    ],
+  },
+  {
+    id: 'festivals-events',
+    title: 'Festivals & Major Events',
+    description: 'Front-barrier coverage, traffic control, and perimeter security for large public gatherings.',
+    count: 4,
+    images: [
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/0fa27b6efa46df4aa7f3086e7f33be94-768.webp',
+        alt: 'M&G Security at the festival main stage barrier',
+        caption: 'Main stage crowd at a festival',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/2ccbc1d39a1af2f20cc12fbb8c002699-768.webp',
+        alt: 'M&G Security directing traffic at a street festival',
+        caption: 'Street festival traffic control',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/4a15b15e99d381136f2c5a5dfeb79a5b-768.webp',
+        alt: 'M&G Security on patrol at the county fair',
+        caption: 'County fairgrounds patrol',
+      },
+      {
+        src: 'https://pagesmith-cdn.com/f57c14f2/images/8b7139f9386e5f7a268d6b5d074ad57c-768.webp',
+        alt: 'M&G Security checking tickets at a major event',
+        caption: 'Major event entrance checkpoint',
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Photo Gallery — M&G Security"
+  description="Photos from events, construction sites, and venues across Berks County where M&G Security has provided professional protection."
+  jsonLd={jsonLd}
+>
+  <GalleryHero />
+  {sections.map((section) => (
+    <GallerySection
+      id={section.id}
+      title={section.title}
+      description={section.description}
+      count={section.count}
+      images={section.images}
+    />
+  ))}
+</BaseLayout>

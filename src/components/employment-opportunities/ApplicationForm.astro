@@ -1,0 +1,164 @@
+---
+---
+
+<section class="bg-dark-background py-24 md:py-32 relative overflow-hidden" data-ps="src/components/employment-opportunities/ApplicationForm.astro:2xfppv">
+  <div
+    class="absolute inset-0 pointer-events-none"
+    style="background: radial-gradient(at 25% 50%, oklch(0.75 0.16 85 / 0.08), rgba(0, 0, 0, 0) 55%);"
+   data-ps="src/components/employment-opportunities/ApplicationForm.astro:ctwuoc"></div>
+  <div class="max-w-5xl mx-auto px-6 relative" data-ps="src/components/employment-opportunities/ApplicationForm.astro:ctwuod">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12" data-ps="src/components/employment-opportunities/ApplicationForm.astro:ctwuoe">
+      <div class="lg:col-span-1 flex flex-col gap-8" data-ps="src/components/employment-opportunities/ApplicationForm.astro:ctwuof">
+        <div class="bg-dark-background/50 border border-dark-border p-8 rounded-none" data-ps="src/components/employment-opportunities/ApplicationForm.astro:ctwuog">
+          <h3 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-4" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dcj5mo">By Mail</h3>
+          <p class="text-dark-foreground text-[14px] leading-relaxed" data-ps="src/components/employment-opportunities/ApplicationForm.astro:w3tbal">
+            M&amp;G Security<br />P.O. Box 6255<br />Wyomissing, PA 19610
+          </p>
+        </div>
+        <div class="bg-dark-background/50 border border-dark-border p-8 rounded-none" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1saw">
+          <h3 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-4" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dcj5mn">By Phone</h3>
+          <a
+            href="tel:+16105620971"
+            class="text-dark-foreground text-[18px] font-bold hover:text-primary transition-colors block"
+           data-ps="src/components/employment-opportunities/ApplicationForm.astro:vtctys">
+            (610) 562-0971
+          </a>
+          <p class="text-dark-muted-foreground text-[12px] mt-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:w3tbam">Ask for the hiring manager</p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sav">
+        <div class="mb-8" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sau">
+          <span class="w-6 h-0.5 bg-primary mb-4 block" data-ps="src/components/employment-opportunities/ApplicationForm.astro:i5ofzv"></span>
+          <span class="text-primary text-[10px] uppercase font-bold tracking-widest" data-ps="src/components/employment-opportunities/ApplicationForm.astro:i5ofzu">Submit Online</span>
+          <h2 class="text-[36px] leading-[44px] font-bold uppercase tracking-tight text-dark-foreground mt-4 mb-4" data-ps="src/components/employment-opportunities/ApplicationForm.astro:1bvrky">
+            Submit Your Application
+          </h2>
+          <p class="text-[16px] leading-[24px] text-dark-muted-foreground" data-ps="src/components/employment-opportunities/ApplicationForm.astro:w3tban">
+            Send your completed application and supporting documents to us. We recommend including your resume and any law enforcement credentials.
+          </p>
+        </div>
+
+        <form
+          id="employment-form"
+          action="https://formspree.io/f/xzepgydj"
+          method="POST"
+          class="bg-dark-background/50 border border-dark-border p-8 rounded-none grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          <input type="hidden" name="_next" value="/thank-you/" />
+          <input type="hidden" name="_subject" value="New Employment Application — M&G Security" />
+
+          <div class="flex flex-col gap-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sat">
+            <label class="text-dark-muted-foreground text-[12px] uppercase font-bold tracking-wider" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dkx6p6">First Name *</label>
+            <input
+              type="text"
+              name="firstName"
+              required
+              class="bg-dark-background border border-dark-border text-dark-foreground px-4 py-3 rounded-none focus:outline-none focus:border-primary"
+            />
+          </div>
+          <div class="flex flex-col gap-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sas">
+            <label class="text-dark-muted-foreground text-[12px] uppercase font-bold tracking-wider" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dkx6p5">Last Name *</label>
+            <input
+              type="text"
+              name="lastName"
+              required
+              class="bg-dark-background border border-dark-border text-dark-foreground px-4 py-3 rounded-none focus:outline-none focus:border-primary"
+            />
+          </div>
+          <div class="flex flex-col gap-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sar">
+            <label class="text-dark-muted-foreground text-[12px] uppercase font-bold tracking-wider" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dkx6p4">Email *</label>
+            <input
+              type="email"
+              name="email"
+              required
+              class="bg-dark-background border border-dark-border text-dark-foreground px-4 py-3 rounded-none focus:outline-none focus:border-primary"
+            />
+          </div>
+          <div class="flex flex-col gap-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1saq">
+            <label class="text-dark-muted-foreground text-[12px] uppercase font-bold tracking-wider" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dkx6oi">Phone *</label>
+            <input
+              type="tel"
+              name="phone"
+              required
+              class="bg-dark-background border border-dark-border text-dark-foreground px-4 py-3 rounded-none focus:outline-none focus:border-primary"
+            />
+          </div>
+          <div class="flex flex-col gap-2 md:col-span-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sap">
+            <label class="text-dark-muted-foreground text-[12px] uppercase font-bold tracking-wider" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dkx6oh">Law Enforcement Background</label>
+            <select
+              name="background"
+              class="bg-dark-background border border-dark-border text-dark-foreground px-4 py-3 rounded-none focus:outline-none focus:border-primary"
+            >
+              <option>Select...</option>
+              <option>Active Law Enforcement</option>
+              <option>Retired Law Enforcement</option>
+              <option>Security Experience</option>
+              <option>Other/Military</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2 md:col-span-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1sao">
+            <label class="text-dark-muted-foreground text-[12px] uppercase font-bold tracking-wider" data-ps="src/components/employment-opportunities/ApplicationForm.astro:dkx6og">Message / Cover Letter</label>
+            <textarea
+              name="message"
+              rows="5"
+              class="bg-dark-background border border-dark-border text-dark-foreground px-4 py-3 rounded-none focus:outline-none focus:border-primary resize-none"
+            ></textarea>
+          </div>
+          <div class="md:col-span-2" data-ps="src/components/employment-opportunities/ApplicationForm.astro:8r1san">
+            <button
+              type="submit"
+              id="employment-submit-btn"
+              class="bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none hover:bg-primary-hover flex items-center justify-center gap-2 transition-colors disabled:opacity-75 disabled:cursor-not-allowed"
+             data-ps="src/components/employment-opportunities/ApplicationForm.astro:32srp9">
+              <i class="ri-send-plane-line"></i>
+              <span data-ps="src/components/employment-opportunities/ApplicationForm.astro:k1au95">Submit Application</span>
+            </button>
+            <p class="text-dark-muted-foreground text-[12px] mt-4 italic" data-ps="src/components/employment-opportunities/ApplicationForm.astro:w3tbb9">
+              Note: We will contact you to arrange delivery of your completed application and supporting documents.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const empForm = document.getElementById('employment-form') as HTMLFormElement | null;
+  const empBtn = document.getElementById('employment-submit-btn') as HTMLButtonElement | null;
+
+  if (empForm) {
+    empForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (empBtn) {
+        empBtn.disabled = true;
+        empBtn.innerHTML = `<span class="inline-block animate-spin mr-2">⟳</span> Submitting...`;
+      }
+
+      const formData = new FormData(empForm);
+
+      try {
+        const response = await fetch(empForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+
+        if (response.ok) {
+          window.location.href = '/thank-you/';
+        } else {
+          empForm.submit();
+        }
+      } catch (err) {
+        empForm.submit();
+      }
+    });
+  }
+</script>
+      </div>
+    </div>
+  </div>
+</section>

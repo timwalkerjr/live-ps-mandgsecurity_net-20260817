@@ -1,0 +1,47 @@
+---
+export interface Props {
+  id: string;
+  title: string;
+  description: string;
+  count: number;
+  images: { src: string; alt: string; caption: string }[];
+}
+
+const { id, title, description, count, images } = Astro.props;
+---
+
+<section id={id} class="bg-background py-16 md:py-20 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 pb-8 border-b border-border">
+      <div class="max-w-3xl">
+        <h2 class="text-[36px] leading-[44px] font-bold uppercase tracking-tight text-foreground mb-3">
+          {title}
+        </h2>
+        <p class="text-[14px] leading-relaxed text-muted-foreground">
+          {description}
+        </p>
+      </div>
+      <span class="text-primary text-[12px] uppercase font-bold tracking-widest whitespace-nowrap">
+        {count} photos
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {images.map((img) => (
+        <figure class="bg-surface border border-gray-100 rounded-none overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img
+              src={img.src}
+              alt={img.alt}
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="p-4 text-[12px] text-muted-foreground leading-snug">
+            {img.caption}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>

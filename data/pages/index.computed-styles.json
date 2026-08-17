@@ -1,0 +1,1607 @@
+{
+  "viewportWidth": 1920,
+  "pageBackground": {
+    "type": "color",
+    "value": "oklch(0.98 0 260)"
+  },
+  "isElementor": false,
+  "sectionThemes": [
+    {
+      "background": "oklch(0.98 0 260)",
+      "isBackgroundPhoto": true,
+      "overlay": "radial-gradient(at 100% 0%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 55%)",
+      "textColor": "oklch(0.98 0 260)",
+      "headings": [
+        {
+          "tag": "h1",
+          "fontSize": "60px",
+          "fontWeight": "700",
+          "color": "oklch(0.98 0 260)",
+          "text": "The Most TrustedSecurity Providerin Berks County",
+          "textTransform": "uppercase",
+          "letterSpacing": "-1.2px",
+          "textAlign": "center"
+        },
+        {
+          "tag": "h2",
+          "fontSize": "48px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Professional Security Services",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.96px",
+          "textAlign": "center"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Apartment Complex Security",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Public Auctions",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Construction Sites",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "oklch(0.7 0.01 260)",
+        "lineHeight": "26px",
+        "textAlign": "center"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "color": "oklch(0.12 0.02 260)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "text": "(484) 824-8631"
+        },
+        {
+          "color": "oklch(0.7 0.01 260)",
+          "border": "1px solid oklch(0.35 0.02 260)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "text": "Request a Quote"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 126,
+          "displayHeight": 40,
+          "objectFit": "contain"
+        },
+        {
+          "displayWidth": 1920,
+          "displayHeight": 1080,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 880,
+          "displayHeight": 660,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 48,
+          "displayHeight": 48,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 48,
+          "displayHeight": 48,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 48,
+          "displayHeight": 48,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 152,
+          "displayHeight": 48,
+          "objectFit": "contain"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "896px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "8px",
+        "childCount": 2
+      },
+      "interactionType": "carousel",
+      "pseudoElements": [
+        {
+          "host": "ri-phone-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "background": "oklch(0.18 0.03 260)",
+      "isBackgroundPhoto": true,
+      "overlay": "radial-gradient(at 100% 0%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 55%)",
+      "textColor": "oklch(0.98 0 260)",
+      "headings": [
+        {
+          "tag": "h1",
+          "fontSize": "60px",
+          "fontWeight": "700",
+          "color": "oklch(0.98 0 260)",
+          "text": "The Most TrustedSecurity Providerin Berks County",
+          "textTransform": "uppercase",
+          "letterSpacing": "-1.2px",
+          "textAlign": "center"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "oklch(0.7 0.01 260)",
+        "lineHeight": "26px",
+        "textAlign": "center"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "color": "oklch(0.12 0.02 260)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "text": "(484) 824-8631"
+        },
+        {
+          "color": "oklch(0.7 0.01 260)",
+          "border": "1px solid oklch(0.35 0.02 260)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "text": "Request a Quote"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 1920,
+          "displayHeight": 1080,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "896px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "8px",
+        "childCount": 2
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-phone-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-mail-line text-primary-500",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "gradient": "linear-gradient(oklch(0.18 0.03 260 / 0.9), oklch(0.18 0.03 260 / 0.8), oklch(0.18 0.03 260 / 0.95))",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "gradient": "radial-gradient(at 100% 0%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 55%)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "oklch(0.18 0.03 260)",
+      "textColor": "oklch(0.98 0 260)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "color": "oklch(0.98 0 260)",
+          "text": "Founded by Law Enforcement, Built on Trust",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.72px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "oklch(0.7 0.01 260)",
+        "lineHeight": "24px",
+        "textAlign": "start"
+      },
+      "buttons": [],
+      "images": [
+        {
+          "displayWidth": 880,
+          "displayHeight": 660,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "paddingBlock": "128px 128px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "80px",
+        "childCount": 2
+      }
+    },
+    {
+      "background": "oklch(0.95 0.01 260)",
+      "textColor": "oklch(0.12 0.02 260)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "48px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "What Our Clients Say",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.96px",
+          "textAlign": "center"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Mr. Tom Doyle",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.28px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Charles Mountcastle III",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.28px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "oklch(0.12 0.02 260)",
+          "text": "Beth Hiem",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.28px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "oklch(0.45 0.02 260)",
+        "lineHeight": "24px",
+        "textAlign": "center"
+      },
+      "buttons": [],
+      "images": [
+        {
+          "displayWidth": 48,
+          "displayHeight": 48,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 48,
+          "displayHeight": 48,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 48,
+          "displayHeight": 48,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "paddingBlock": "128px 128px",
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "childCount": 3
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-star-fill text-primary-500 text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-star-fill text-primary-500 text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-star-fill text-primary-500 text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-star-fill text-primary-500 text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-star-fill text-primary-500 text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-star-fill text-primary-500 text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "background": "oklch(0.18 0.03 260)",
+      "textColor": "oklch(0.45 0.02 260)",
+      "headings": [],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "oklch(0.45 0.02 260)",
+        "lineHeight": "20px",
+        "textAlign": "center"
+      },
+      "buttons": [],
+      "layout": {
+        "paddingBlock": "48px 48px",
+        "display": "flex",
+        "flexDirection": "row",
+        "childCount": 2
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-shield-check-line text-primary-500 text-3xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-shield-check-line text-primary-500 text-3xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-shield-check-line text-primary-500 text-3xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-shield-check-line text-primary-500 text-3xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-shield-check-line text-primary-500 text-3xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-shield-check-line text-primary-500 text-3xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "background": "oklch(0.18 0.03 260)",
+      "textColor": "oklch(0.98 0 260)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "color": "oklch(0.98 0 260)",
+          "text": "We Are Hiring",
+          "textTransform": "uppercase",
+          "letterSpacing": "-0.72px",
+          "textAlign": "left"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "oklch(0.7 0.01 260)",
+        "lineHeight": "24px",
+        "textAlign": "left"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "color": "oklch(0.12 0.02 260)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "text": "Apply Now"
+        },
+        {
+          "color": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.98 0 260 / 0.3)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "text": "Contact Us"
+        }
+      ],
+      "layout": {
+        "paddingBlock": "80px 80px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "gap": "32px",
+        "childCount": 2
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-arrow-right-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "gradient": "radial-gradient(at 75% 50%, oklch(0.75 0.16 85 / 0.1), rgba(0, 0, 0, 0) 60%)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "oklch(0.18 0.03 260)",
+      "textColor": "oklch(0.55 0.02 260)",
+      "headings": [
+        {
+          "tag": "h4",
+          "fontSize": "10px",
+          "fontWeight": "700",
+          "color": "oklch(0.55 0.02 260)",
+          "text": "Navigation",
+          "textTransform": "uppercase",
+          "letterSpacing": "1px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "10px",
+          "fontWeight": "700",
+          "color": "oklch(0.55 0.02 260)",
+          "text": "Services",
+          "textTransform": "uppercase",
+          "letterSpacing": "1px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "10px",
+          "fontWeight": "700",
+          "color": "oklch(0.55 0.02 260)",
+          "text": "Contact",
+          "textTransform": "uppercase",
+          "letterSpacing": "1px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "oklch(0.7 0.01 260)",
+        "lineHeight": "22.75px",
+        "textAlign": "start"
+      },
+      "buttons": [],
+      "links": [
+        {
+          "text": "Home",
+          "color": "oklch(0.7 0.01 260)",
+          "fontWeight": "400"
+        },
+        {
+          "text": "Style Guide",
+          "color": "oklch(0.55 0.02 260)",
+          "fontWeight": "400"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 152,
+          "displayHeight": 48,
+          "objectFit": "contain"
+        }
+      ],
+      "layout": {
+        "paddingBlock": "80px 40px",
+        "display": "grid",
+        "gridTemplateColumns": "109.328px 109.328px 109.328px 109.328px 109.328px 109.328px 109.328px 109.328px 109.328px 109.328px 109.328px 109.328px",
+        "gap": "48px",
+        "childCount": 4
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-facebook-fill text-sm",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "globalTypography": {
+    "headingFont": "Space Grotesk",
+    "bodyFont": "Manrope",
+    "scale": {
+      "h1": {
+        "fontSize": "60px",
+        "fontWeight": "700",
+        "lineHeight": "60px"
+      },
+      "h2": {
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "48px"
+      },
+      "h3": {
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "lineHeight": "28px"
+      },
+      "h4": {
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "lineHeight": "20px"
+      },
+      "body": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "26px"
+      }
+    }
+  },
+  "navigation": {
+    "isFullWidth": true,
+    "width": "1920px",
+    "backgroundColor": "oklch(0.98 0 260)",
+    "position": "fixed",
+    "logo": {
+      "width": "126px",
+      "height": "40px",
+      "position": "inside-nav",
+      "hasBadge": false,
+      "src": "https://mandgsecurity.clientsite.agency/project_files/1bf70c2f-d2e2-4a14-9178-9762d73e2ef9/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text.webp"
+    },
+    "links": [
+      {
+        "text": "Home",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.75 0.16 85)"
+      },
+      {
+        "text": "Security Services",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.98 0 260 / 0.9)"
+      },
+      {
+        "text": "About Us",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.98 0 260 / 0.9)"
+      },
+      {
+        "text": "Photo Gallery",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.98 0 260 / 0.9)"
+      },
+      {
+        "text": "Contact Us",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.98 0 260 / 0.9)"
+      },
+      {
+        "text": "Employment",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.98 0 260 / 0.9)"
+      },
+      {
+        "text": "(484) 824-8631",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "0.6px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.98 0 260 / 0.9)"
+      },
+      {
+        "text": "Get a Quote",
+        "fontSize": "12px",
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "letterSpacing": "1.2px",
+        "textTransform": "uppercase",
+        "color": "oklch(0.12 0.02 260)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "oklch(0.75 0.16 85)"
+        }
+      }
+    ],
+    "linkLayout": {
+      "paddingX": "0px 0px",
+      "pitchPx": 116,
+      "distribution": "right",
+      "verticalAlign": "middle"
+    },
+    "pseudoElements": [
+      {
+        "host": "ri-phone-line",
+        "type": "::before",
+        "width": "auto",
+        "height": "auto",
+        "content": ""
+      },
+      {
+        "host": "ri-menu-line text-2xl",
+        "type": "::before",
+        "width": "auto",
+        "height": "auto",
+        "content": ""
+      }
+    ]
+  },
+  "sliders": [],
+  "buttons": [
+    {
+      "backgroundColor": "oklch(0.75 0.16 85)",
+      "color": "oklch(0.12 0.02 260)",
+      "padding": "16px 32px 16px 32px",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "text": "(484) 824-8631"
+    },
+    {
+      "color": "oklch(0.7 0.01 260)",
+      "border": "1px solid oklch(0.35 0.02 260)",
+      "padding": "16px 32px 16px 32px",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "text": "Request a Quote"
+    },
+    {
+      "color": "oklch(0.98 0 260)",
+      "border": "1px solid oklch(0.98 0 260 / 0.3)",
+      "padding": "16px 32px 16px 32px",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "text": "Contact Us"
+    }
+  ],
+  "videos": [],
+  "footer": {
+    "background": "oklch(0.18 0.03 260)",
+    "textColor": "oklch(0.98 0 260)",
+    "columns": 12,
+    "textAlign": "start",
+    "linkGroups": [
+      {
+        "heading": "Navigation",
+        "links": [
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "Security Services",
+            "href": "/security-services"
+          },
+          {
+            "text": "About Us",
+            "href": "/about-us"
+          },
+          {
+            "text": "Photo Gallery",
+            "href": "/photo-gallery"
+          },
+          {
+            "text": "Contact Us",
+            "href": "/contact-us"
+          },
+          {
+            "text": "Employment",
+            "href": "/employment-opportunities"
+          }
+        ]
+      },
+      {
+        "heading": "Services",
+        "links": [
+          {
+            "text": "Sporting Events",
+            "href": "/security-services/sporting-events"
+          },
+          {
+            "text": "High School Events",
+            "href": "/security-services/high-school-events"
+          },
+          {
+            "text": "Construction Sites",
+            "href": "/security-services/construction-sites"
+          },
+          {
+            "text": "Festivals & Major Events",
+            "href": "/security-services/festivals-major-events"
+          },
+          {
+            "text": "Concerts",
+            "href": "/security-services/concert-security"
+          },
+          {
+            "text": "Private Investigation",
+            "href": "/security-services/private-investigation"
+          },
+          {
+            "text": "Apartment Complex",
+            "href": "/security-services/apartment-complex"
+          },
+          {
+            "text": "Auctions",
+            "href": "/security-services/auctions"
+          },
+          {
+            "text": "Restaurant Maintenance",
+            "href": "/security-services/restaurant-maintenance"
+          }
+        ]
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "facebook",
+      "href": "https://www.facebook.com/profile.php?id=100063783338150",
+      "location": "footer"
+    }
+  ],
+  "hoverStyles": {
+    ".hover\\:-translate-y-1": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".hover\\:border-primary-300": {
+      "borderColor": "oklch(var(--primary-300) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:border-primary-500": {
+      "borderColor": "oklch(var(--primary-500) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:bg-background-100": {
+      "backgroundColor": "oklch(var(--background-100) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-background-50": {
+      "backgroundColor": "oklch(var(--background-50) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-foreground-50\\/10": {
+      "backgroundColor": "oklch(var(--foreground-50) / .1)"
+    },
+    ".hover\\:bg-foreground-50\\/20": {
+      "backgroundColor": "oklch(var(--foreground-50) / .2)"
+    },
+    ".hover\\:bg-primary-500": {
+      "backgroundColor": "oklch(var(--primary-500) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-primary-600": {
+      "backgroundColor": "oklch(var(--primary-600) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-secondary-500": {
+      "backgroundColor": "oklch(var(--secondary-500) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:text-foreground-50": {
+      "color": "oklch(var(--foreground-50) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-foreground-950": {
+      "color": "oklch(var(--foreground-950) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-primary-500": {
+      "color": "oklch(var(--primary-500) / var(--tw-text-opacity,1))"
+    },
+    ".group .group-hover\\:translate-y-0": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:scale-105": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:bg-foreground-50\\/15": {
+      "backgroundColor": "oklch(var(--foreground-50) / .15)"
+    },
+    ".group .group-hover\\:bg-primary-100": {
+      "backgroundColor": "oklch(var(--primary-100) / var(--tw-bg-opacity,1))"
+    },
+    ".group .group-hover\\:text-foreground-50": {
+      "color": "oklch(var(--foreground-50) / var(--tw-text-opacity,1))"
+    },
+    ".group .group-hover\\:text-foreground-50\\/85": {
+      "color": "oklch(var(--foreground-50) / .85)"
+    },
+    ".group .group-hover\\:text-foreground-600": {
+      "color": "oklch(var(--foreground-600) / var(--tw-text-opacity,1))"
+    },
+    ".group .group-hover\\:text-foreground-950": {
+      "color": "oklch(var(--foreground-950) / var(--tw-text-opacity,1))"
+    },
+    ".group .group-hover\\:text-primary-500": {
+      "color": "oklch(var(--primary-500) / var(--tw-text-opacity,1))"
+    },
+    ".group .group-hover\\:opacity-100": {
+      "opacity": "1"
+    }
+  },
+  "cssVariables": {
+    "--font-heading": "\"Space Grotesk\", ui-sans-serif, system-ui, sans-serif",
+    "--font-body": "\"Manrope\", ui-sans-serif, system-ui, sans-serif",
+    "--font-label": "\"Space Grotesk\", ui-sans-serif, system-ui, sans-serif"
+  },
+  "externalFonts": [
+    "https://fonts.googleapis.com/",
+    "https://fonts.gstatic.com/",
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Space+Grotesk:wght@700&display=swap"
+  ],
+  "portSectionStyles": [
+    {
+      "index": 0,
+      "heading": "Site header / navigation (port into Navigation.astro)",
+      "elements": [
+        {
+          "tag": "a",
+          "cls": "flex",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "img",
+          "cls": "h-10",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "a",
+          "cls": "font-label",
+          "text": "Home",
+          "color": "oklch(0.75 0.16 85)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "font-label",
+          "text": "Security Services",
+          "color": "oklch(0.98 0 260 / 0.9)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "font-label",
+          "text": "About Us",
+          "color": "oklch(0.98 0 260 / 0.9)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "font-label",
+          "text": "Photo Gallery",
+          "color": "oklch(0.98 0 260 / 0.9)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "font-label",
+          "text": "Contact Us",
+          "color": "oklch(0.98 0 260 / 0.9)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "font-label",
+          "text": "Employment",
+          "color": "oklch(0.98 0 260 / 0.9)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "flex",
+          "text": "(484) 824-8631",
+          "color": "oklch(0.98 0 260 / 0.9)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "px-8",
+          "text": "Get a Quote",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "heading": "The Most TrustedSecurity Providerin Berks County",
+      "elements": [
+        {
+          "tag": "img",
+          "cls": "w-full",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "w-1.5",
+          "color": "oklch(0.7 0.01 260)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "h1",
+          "cls": "font-heading",
+          "text": "The Most TrustedSecurity Provi",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "60px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "inline-flex",
+          "text": "(484) 824-8631",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "inline-flex",
+          "text": "Request a Quote",
+          "color": "oklch(0.7 0.01 260)",
+          "border": "1px solid oklch(0.35 0.02 260)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "heading": "Professional Security Services",
+      "elements": [
+        {
+          "tag": "span",
+          "cls": "w-6",
+          "color": "oklch(0.75 0.16 85)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "10px",
+          "fontWeight": "700",
+          "lineWidth": 24,
+          "lineHeight": 1
+        },
+        {
+          "tag": "h2",
+          "cls": "mt-5",
+          "text": "Professional Security Services",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "48px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Apartment Complex SecurityProf",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "absolute",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "div",
+          "cls": "w-12",
+          "color": "oklch(0.75 0.16 85)",
+          "backgroundColor": "oklch(0.93 0.04 85)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Apartment Complex Security",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Public AuctionsCrowd control a",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Public Auctions",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Construction SitesSecure your ",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Construction Sites",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Festivals & Major EventsLarge ",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Festivals & Major Events",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Sporting EventsKeep athletes a",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Sporting Events",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "ConcertsVenue security and cro",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Concerts",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "High School EventsFrom sportin",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "High School Events",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Restaurant & HospitalityOverni",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Restaurant & Hospitality",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Private InvestigationsOur lice",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "mt-5",
+          "text": "Private Investigations",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "18px",
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "heading": "Founded by Law Enforcement, Built on Trust",
+      "elements": [
+        {
+          "tag": "img",
+          "cls": "w-full",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "w-6",
+          "color": "oklch(0.75 0.16 85)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "10px",
+          "fontWeight": "700",
+          "lineWidth": 24,
+          "lineHeight": 1
+        },
+        {
+          "tag": "h2",
+          "cls": "mt-5",
+          "text": "Founded by Law Enforcement, Bu",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "36px",
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "heading": "What Our Clients Say",
+      "elements": [
+        {
+          "tag": "span",
+          "cls": "w-6",
+          "color": "oklch(0.75 0.16 85)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "10px",
+          "fontWeight": "700",
+          "lineWidth": 24,
+          "lineHeight": 1
+        },
+        {
+          "tag": "h2",
+          "cls": "mt-5",
+          "text": "What Our Clients Say",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "48px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "div",
+          "cls": "bg-background-50",
+          "text": "Mr. Tom DoyleActivities Chairm",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "img",
+          "cls": "w-12",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h4",
+          "cls": "font-heading",
+          "text": "Mr. Tom Doyle",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "14px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "div",
+          "cls": "bg-background-50",
+          "text": "Charles Mountcastle IIIMonty's",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h4",
+          "cls": "font-heading",
+          "text": "Charles Mountcastle III",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "14px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "div",
+          "cls": "bg-background-50",
+          "text": "Beth HiemApartment Complex Man",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.9 0.01 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h4",
+          "cls": "font-heading",
+          "text": "Beth Hiem",
+          "color": "oklch(0.12 0.02 260)",
+          "fontSize": "14px",
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "heading": "We Are Hiring",
+      "elements": [
+        {
+          "tag": "h2",
+          "cls": "font-heading",
+          "text": "We Are Hiring",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "36px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "inline-flex",
+          "text": "Apply Now",
+          "color": "oklch(0.12 0.02 260)",
+          "backgroundColor": "oklch(0.75 0.16 85)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "inline-flex",
+          "text": "Contact Us",
+          "color": "oklch(0.98 0 260)",
+          "border": "1px solid oklch(0.98 0 260 / 0.3)",
+          "fontSize": "12px",
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "heading": "Site footer (port into Footer.astro)",
+      "elements": [
+        {
+          "tag": "a",
+          "cls": "flex",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "img",
+          "cls": "h-12",
+          "color": "oklch(0.98 0 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "a",
+          "cls": "w-9",
+          "color": "oklch(0.7 0.01 260)",
+          "border": "1px solid oklch(0.35 0.02 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "h4",
+          "cls": "font-label",
+          "text": "Navigation",
+          "color": "oklch(0.55 0.02 260)",
+          "fontSize": "10px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Home",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Security Services",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "About Us",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Photo Gallery",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Contact Us",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Employment",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "h4",
+          "cls": "font-label",
+          "text": "Services",
+          "color": "oklch(0.55 0.02 260)",
+          "fontSize": "10px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Sporting Events",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "High School Events",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Construction Sites",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Festivals & Major Events",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Concerts",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Private Investigation",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Apartment Complex",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Auctions",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "text-sm",
+          "text": "Restaurant Maintenance",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "h4",
+          "cls": "font-label",
+          "text": "Contact",
+          "color": "oklch(0.55 0.02 260)",
+          "fontSize": "10px",
+          "fontWeight": "700"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-primary-500",
+          "text": "(484) 824-8631",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-primary-500",
+          "text": "info@theiroldurl.com",
+          "color": "oklch(0.7 0.01 260)",
+          "fontSize": "14px"
+        },
+        {
+          "tag": "div",
+          "cls": "w-full",
+          "text": "© 2026 M&G Security · All righ",
+          "color": "oklch(0.55 0.02 260)",
+          "border": "1px solid oklch(0.25 0.02 260)",
+          "fontSize": "12px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-primary-500",
+          "text": "Style Guide",
+          "color": "oklch(0.55 0.02 260)",
+          "fontSize": "12px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-primary-500",
+          "text": "About This Site",
+          "color": "oklch(0.55 0.02 260)",
+          "fontSize": "12px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-primary-500",
+          "text": "Sitemap",
+          "color": "oklch(0.55 0.02 260)",
+          "fontSize": "12px"
+        }
+      ]
+    }
+  ],
+  "floatingOverlays": [],
+  "positionedOverlays": [],
+  "captureViewport": 1920
+}

@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/Container.astro';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return data.draft !== true;
+});
+
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Security Insights & Articles | M & G Security",
+  "description": "Stay informed with professional security insights, industry updates, and safety tips from the experts at M & G Security.",
+  "url": Astro.url.href
+};
+---
+
+<BaseLayout title="Security Insights & Articles" description="Professional security insights, industry updates, and safety tips from M & G Security." jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="bg-dark-background text-dark-muted-foreground pt-[140px] pb-[60px] md:pt-[160px] md:pb-[80px] relative overflow-hidden" data-ps="src/pages/articles.astro:k6g63m">
+    <!-- Background Image with Dark Overlay -->
+    <div class="absolute inset-0 z-0" data-ps="src/pages/articles.astro:rtwn7z">
+      <img 
+        src="https://pagesmith-cdn.com/f57c14f2/images/modern-24-7-security-dispatch-and-operations-communication-c-ed715b22-1024.webp" 
+        alt="Security Insights and Articles" 
+        class="w-full h-full object-cover opacity-25" 
+        loading="eager"
+        fetchpriority="high" data-ps="src/pages/articles.astro:21cbfa" />
+      <div class="absolute inset-0 bg-dark-background/80" data-ps="src/pages/articles.astro:rtwn80"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-dark-background/30 via-transparent to-dark-background" data-ps="src/pages/articles.astro:rtwn81"></div>
+    </div>
+    <div
+      class="absolute inset-0 pointer-events-none z-0"
+      style="background: radial-gradient(at 100% 0%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 55%);"
+     data-ps="src/pages/articles.astro:rtwn7w"></div>
+    <div class="max-w-5xl mx-auto px-6 flex flex-col items-center text-center relative z-10" data-ps="src/pages/articles.astro:rtwn7x">
+      <div class="flex items-center gap-2 mb-6" data-ps="src/pages/articles.astro:rtwn7y">
+        <span class="w-1.5 h-4 bg-primary" data-ps="src/pages/articles.astro:rc6ay7"></span>
+        <span class="text-[12px] uppercase font-bold tracking-widest text-primary" data-ps="src/pages/articles.astro:rc6ay6">Resources</span>
+      </div>
+      <h1 class="text-[60px] leading-[60px] font-bold uppercase tracking-tight text-dark-foreground mb-8" data-ps="src/pages/articles.astro:xw0gmo">
+        Security <span class="text-primary" data-ps="src/pages/articles.astro:rc6ay5">Insights</span><br />
+        & Professional Updates
+      </h1>
+      <p class="text-[16px] leading-[26px] max-w-[720px] text-dark-muted-foreground" data-ps="src/pages/articles.astro:frpsor">
+        Expert analysis, industry news, and security best practices from our team of former law enforcement professionals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="py-24 bg-background" data-ps="src/pages/articles.astro:k6g63n">
+    <Container>
+      {sortedPosts.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-ps="src/pages/articles.astro:rtwn7z">
+          {sortedPosts.map((post, __psIdx) => (
+            <article class="bg-surface border border-gray-100 p-8 flex flex-col hover:-translate-y-1 transition-all duration-300" data-ps={`src/pages/articles.astro:9ji56p-${__psIdx}`}>
+              <div class="flex items-center gap-3 mb-6" data-ps={`src/pages/articles.astro:rtwn80-${__psIdx}`}>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-primary bg-primary/10 px-2 py-1" data-ps={`src/pages/articles.astro:rc6ay4-${__psIdx}`}>
+                  {post.data.category || 'Security'}
+                </span>
+                <time class="text-[12px] text-muted-foreground">
+                  {post.data.pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </time>
+              </div>
+              
+              <h2 class="text-[24px] leading-[32px] font-bold uppercase tracking-tight mb-4" data-ps={`src/pages/articles.astro:7vl20-${__psIdx}`}>
+                <a href={`/blog/${post.id}/`} class="hover:text-primary transition-colors" data-ps={`src/pages/articles.astro:mvnpef-${__psIdx}`}>
+                  {post.data.title}
+                </a>
+              </h2>
+              
+              <p class="text-muted-foreground text-[14px] leading-relaxed mb-8 flex-grow" data-ps={`src/pages/articles.astro:frpsos-${__psIdx}`}>
+                {post.data.description}
+              </p>
+              
+              <a 
+                href={`/blog/${post.id}/`} 
+                class="text-[12px] font-bold uppercase tracking-[0.2em] text-foreground flex items-center gap-2 group hover:text-primary transition-colors"
+               data-ps={`src/pages/articles.astro:mvnpeg-${__psIdx}`}>
+                Read Article
+                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-20 border border-dashed border-gray-200" data-ps="src/pages/articles.astro:rtwn81">
+          <p class="text-muted-foreground italic" data-ps="src/pages/articles.astro:frpsot">New articles are currently being prepared. Check back soon.</p>
+        </div>
+      )}
+    </Container>
+  </section>
+</BaseLayout>

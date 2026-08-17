@@ -1,0 +1,16 @@
+{
+  "sections": 8,
+  "portStyleSections": 7,
+  "join": {
+    "byId": 0,
+    "byHeading": 6,
+    "byIndex": 1,
+    "unmatched": 1
+  },
+  "sectionsWithSourceId": 0,
+  "portStylesWithSourceId": 0,
+  "sectionsWithElementStyles": 7,
+  "totalElementStyles": 79,
+  "unmatchedSectionSourceIds": [],
+  "unusedPortSourceIds": []
+}

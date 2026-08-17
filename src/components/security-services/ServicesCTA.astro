@@ -1,0 +1,42 @@
+---
+export interface Props {
+  heading?: string;
+}
+
+const { heading = 'Need Security for Your Next Event?' } = Astro.props;
+---
+
+<section id="cta" class="relative bg-dark-background overflow-hidden" data-ps="src/components/security-services/ServicesCTA.astro:npvoq0">
+  <div
+    class="absolute inset-0 pointer-events-none"
+    style="background: radial-gradient(at 75% 50%, oklch(0.75 0.16 85 / 0.1), rgba(0, 0, 0, 0) 60%);"
+   data-ps="src/components/security-services/ServicesCTA.astro:5noz7j">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8" data-ps="src/components/security-services/ServicesCTA.astro:5noz7i">
+    <div data-ps="src/components/security-services/ServicesCTA.astro:5noz7h">
+      <h2 class="text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] font-bold uppercase tracking-tight text-dark-foreground" data-ps="src/components/security-services/ServicesCTA.astro:pdonfd">
+        {heading}
+      </h2>
+      <p class="text-[16px] leading-[24px] text-dark-muted-foreground mt-4 max-w-3xl" data-ps="src/components/security-services/ServicesCTA.astro:akj3nk">
+        Contact us today for a tailored security assessment and quote. Our team is ready to protect
+        your people, property, and peace of mind.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap gap-4 shrink-0" data-ps="src/components/security-services/ServicesCTA.astro:5noz7g">
+      <a
+        href="tel:+16105620971"
+        class="bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none hover:bg-primary-hover transition-colors flex items-center gap-2"
+       data-ps="src/components/security-services/ServicesCTA.astro:assboc">
+        <i class="ri-phone-line" aria-hidden="true"></i> Call (610) 562-0971
+      </a>
+      <a
+        href="/contact-us/"
+        class="border border-dark-foreground/30 text-dark-foreground font-bold uppercase tracking-wider text-[12px] px-8 py-4 rounded-none hover:bg-white/5 transition-colors flex items-center gap-2"
+       data-ps="src/components/security-services/ServicesCTA.astro:assbod">
+        <i class="ri-mail-line" aria-hidden="true"></i> Request a Quote
+      </a>
+    </div>
+  </div>
+</section>

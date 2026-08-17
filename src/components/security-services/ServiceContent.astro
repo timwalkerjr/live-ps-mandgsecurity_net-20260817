@@ -1,0 +1,87 @@
+---
+export interface Props {
+  title: string;
+  paragraphs: string[];
+  bullets: string[];
+  serviceShortName: string;
+}
+
+const { title, paragraphs, bullets, serviceShortName } = Astro.props;
+---
+
+<section id="content" class="bg-background py-24 md:py-32" data-ps="src/components/security-services/ServiceContent.astro:igbb6y">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12" data-ps="src/components/security-services/ServiceContent.astro:1ifbur">
+    <div class="lg:col-span-2" data-ps="src/components/security-services/ServiceContent.astro:tu3cth">
+      <div class="mb-6 mx-auto lg:mx-0 w-6 h-0.5 bg-primary" data-ps="src/components/security-services/ServiceContent.astro:tu3cti"></div>
+      <h2 class="text-foreground text-[36px] leading-[44px] font-bold uppercase tracking-tight mb-6" data-ps="src/components/security-services/ServiceContent.astro:kc6jc8">
+        {title}
+      </h2>
+      <div class="space-y-6 text-muted-foreground text-[16px] leading-[26px]" data-ps="src/components/security-services/ServiceContent.astro:tu3ctj">
+        {paragraphs.map((p, __psIdx) => (
+          <p set:html={p} data-ps={`src/components/security-services/ServiceContent.astro:cuteo7-${__psIdx}`}></p>
+        ))}
+      </div>
+
+      <div class="mt-12" data-ps="src/components/security-services/ServiceContent.astro:tu3ctk">
+        <div class="w-6 h-0.5 bg-primary mb-4" data-ps="src/components/security-services/ServiceContent.astro:tu3ctl"></div>
+        <h3 class="text-foreground text-[18px] font-bold uppercase tracking-wide mb-6" data-ps="src/components/security-services/ServiceContent.astro:z0lgjt">
+          What M&amp;G Provides
+        </h3>
+        <ul class="space-y-3">
+          {bullets.map((b, __psIdx) => (
+            <li class="flex items-start gap-3 text-foreground text-[15px] leading-[24px]" data-ps={`src/components/security-services/ServiceContent.astro:jl7mv7-${__psIdx}`}>
+              <i class="ri-shield-check-line text-primary text-lg mt-1 shrink-0"></i>
+              <span data-ps={`src/components/security-services/ServiceContent.astro:s27kg7-${__psIdx}`}>{b}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <aside class="space-y-8" data-ps="src/components/security-services/ServiceContent.astro:zbp9ip">
+      <div class="bg-surface border border-gray-100 p-8 shadow-sm" data-ps="src/components/security-services/ServiceContent.astro:tu3ctm">
+        <div class="w-6 h-0.5 bg-primary mb-4" data-ps="src/components/security-services/ServiceContent.astro:tu3ctn"></div>
+        <h4 class="text-foreground text-[12px] font-bold uppercase tracking-widest mb-4" data-ps="src/components/security-services/ServiceContent.astro:lc3o7p">
+          Request This Service
+        </h4>
+        <p class="text-muted-foreground text-[14px] leading-relaxed mb-6" data-ps="src/components/security-services/ServiceContent.astro:cuteo6">
+          Contact M&amp;G Security today for a tailored security assessment and quote for your {serviceShortName.toLowerCase()} security needs.
+        </p>
+        <div class="flex flex-col gap-3" data-ps="src/components/security-services/ServiceContent.astro:tu3cto">
+          <a href="tel:+16105620971" class="bg-primary text-foreground font-bold uppercase tracking-wider text-[12px] px-6 py-3 rounded-none text-center hover:bg-primary-hover transition-colors flex items-center justify-center gap-2" data-ps="src/components/security-services/ServiceContent.astro:5qvhz5">
+            <i class="ri-phone-line"></i>
+            Call (610) 562-0971
+          </a>
+          <a href="/contact-us/" class="border border-border text-foreground font-bold uppercase tracking-wider text-[12px] px-6 py-3 rounded-none text-center hover:bg-background transition-colors" data-ps="src/components/security-services/ServiceContent.astro:5qvhz4">
+            Request a Quote
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-dark-background border border-dark-border p-8" data-ps="src/components/security-services/ServiceContent.astro:tu3ctp">
+        <div class="w-6 h-0.5 bg-primary mb-4" data-ps="src/components/security-services/ServiceContent.astro:tu3ctq"></div>
+        <h4 class="text-primary text-[10px] font-bold uppercase tracking-widest mb-6" data-ps="src/components/security-services/ServiceContent.astro:lc3o7q">
+          Why Choose M&amp;G
+        </h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-dark-foreground text-[14px]" data-ps="src/components/security-services/ServiceContent.astro:jl7mul">
+            <i class="ri-shield-star-line text-primary text-lg shrink-0"></i>
+            <span data-ps="src/components/security-services/ServiceContent.astro:s27kg6">KRE Security LLC. is bonded and insured to provide the services offered to our clients.</span>
+          </li>
+          <li class="flex items-start gap-3 text-dark-foreground text-[14px]" data-ps="src/components/security-services/ServiceContent.astro:jl7muk">
+            <i class="ri-shield-star-line text-primary text-lg shrink-0"></i>
+            <span data-ps="src/components/security-services/ServiceContent.astro:s27kg5">KRE Security LLC. conducts every investigation ethically, morally, legally and with the highest degree of integrity.</span>
+          </li>
+          <li class="flex items-start gap-3 text-dark-foreground text-[14px]" data-ps="src/components/security-services/ServiceContent.astro:jl7muj">
+            <i class="ri-shield-star-line text-primary text-lg shrink-0"></i>
+            <span data-ps="src/components/security-services/ServiceContent.astro:s27kg4">KRE Security LLC. was founded in August of 1990 and recently acquired M&amp;G Security expanding our capabilities and footprint in PA.</span>
+          </li>
+          <li class="flex items-start gap-3 text-dark-foreground text-[14px]" data-ps="src/components/security-services/ServiceContent.astro:jl7mui">
+            <i class="ri-shield-star-line text-primary text-lg shrink-0"></i>
+            <span data-ps="src/components/security-services/ServiceContent.astro:s27kfi">24/7 availability for emergencies</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AboutHero from '@/components/about-us/AboutHero.astro';
+import AboutKRE from '@/components/about-us/AboutKRE.astro';
+import AboutTeam from '@/components/about-us/AboutTeam.astro';
+import ServiceArea from '@/components/about-us/ServiceArea.astro';
+import AboutCTA from '@/components/about-us/AboutCTA.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": new URL('/about-us/', SITE.url).toString(),
+      "url": new URL('/about-us/', SITE.url).toString(),
+      "name": "About Us — M&G Security",
+      "description": "M&G Security is owned and operated by KRE Securities, LLC, providing professional security and investigative services across Berks County, PA.",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": new URL('/about-us/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="About Us — M&G Security"
+  description="M&G Security is owned and operated by KRE Securities, LLC, providing professional security and investigative services across Berks County, PA."
+  jsonLd={jsonLd}
+>
+  <AboutHero />
+  <AboutKRE />
+  <AboutTeam />
+  <ServiceArea />
+  <AboutCTA />
+</BaseLayout>

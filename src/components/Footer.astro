@@ -1,0 +1,93 @@
+---
+import Container from '@/components/Container.astro';
+import { SITE } from '@/config/site';
+
+const pathname = Astro.url.pathname;
+const isHome = pathname === '/' || pathname === '';
+const agencyRel = isHome ? 'noopener' : 'nofollow noopener';
+---
+
+<footer class="bg-dark-background text-dark-muted-foreground pt-24" data-ps="src/components/Footer.astro:footer">
+  <Container>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16" data-ps="src/components/Footer.astro:grid">
+      <!-- Info -->
+      <div class="md:col-span-4" data-ps="src/components/Footer.astro:col1">
+        <div class="flex items-center gap-3 mb-8" data-ps="src/components/Footer.astro:logo-group">
+          <img src={SITE.logoSrc} alt={SITE.name} class="h-11 w-auto object-contain" data-ps="src/components/Footer.astro:4qdjf0" />
+          <div class="h-7 w-px bg-dark-border" data-ps="src/components/Footer.astro:p4vf8b"></div>
+          <a href="https://www.kresecurity.com/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:opacity-90 transition-opacity" data-ps="src/components/Footer.astro:partner-wrap">
+            <img src="https://pagesmith-cdn.com/f57c14f2/images/KRE-logo-2026-1024-1024.webp" alt="KRE Security LLC" class="h-11 w-auto object-contain shrink-0" data-ps="src/components/Footer.astro:partner-logo" />
+            <span class="text-[10px] text-dark-foreground/80 leading-tight max-w-[130px] font-sans" data-ps="src/components/Footer.astro:partner-text">Owned and Operated by KRE Securities, LLC</span>
+          </a>
+        </div>
+        <p class="text-[14px] leading-relaxed mb-8 max-w-sm" data-ps="src/components/Footer.astro:euok">
+          Professional security services for Berks County, PA and surrounding areas since 1997. Locally owned and operated.
+        </p>
+        <div class="flex gap-2" data-ps="src/components/Footer.astro:p4vf89">
+          <a href={SITE.socials.facebook} target="_blank" rel="noopener" class="w-9 h-9 border border-dark-border flex items-center justify-center text-dark-muted-foreground hover:text-primary hover:border-primary transition-colors" data-ps="src/components/Footer.astro:7gqbyw">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="md:col-span-2" data-ps="src/components/Footer.astro:col2">
+        <h4 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-8" data-ps="src/components/Footer.astro:fy3jb7">NAVIGATION</h4>
+        <ul class="flex flex-col gap-4 list-none p-0">
+          <li data-ps="src/components/Footer.astro:wyji4s"><a href="/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzi">Home</a></li>
+          <li data-ps="src/components/Footer.astro:wyji4t"><a href="/security-services/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzj">Security Services</a></li>
+          <li data-ps="src/components/Footer.astro:wyji4u"><a href="/about-us/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzk">About Us</a></li>
+          <li data-ps="src/components/Footer.astro:wyji4ua"><a href="/articles/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzka">Articles</a></li>
+          <li data-ps="src/components/Footer.astro:wyji4v"><a href="/photo-gallery/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzl">Photo Gallery</a></li>
+          <li data-ps="src/components/Footer.astro:wyji4w"><a href="/contact-us/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzm">Contact Us</a></li>
+          <li data-ps="src/components/Footer.astro:wyji4x"><a href="/employment-opportunities/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzn">Employment</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="md:col-span-3" data-ps="src/components/Footer.astro:col3">
+        <h4 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-8" data-ps="src/components/Footer.astro:fy3jb6">SERVICES</h4>
+        <ul class="flex flex-col gap-4 list-none p-0">
+          <li data-ps="src/components/Footer.astro:wyji5j"><a href="/security-services/sporting-events/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzo">Sporting Events</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5k"><a href="/security-services/high-school-events/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzp">High School Events</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5l"><a href="/security-services/construction-sites/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzq">Construction Sites</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5m"><a href="/security-services/festivals-major-events/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqbzr">Festivals & Major Events</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5n"><a href="/security-services/concert-security/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0d">Concerts</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5o"><a href="/security-services/private-investigation/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0e">Private Investigation</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5p"><a href="/security-services/apartment-complex/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0f">Apartment Complex</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5q"><a href="/security-services/auctions/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0g">Auctions</a></li>
+          <li data-ps="src/components/Footer.astro:wyji5r"><a href="/security-services/restaurant-maintenance/" class="text-[14px] hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0h">Restaurant Maintenance</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="md:col-span-3" data-ps="src/components/Footer.astro:col4">
+        <h4 class="text-primary text-[10px] uppercase font-bold tracking-widest mb-8" data-ps="src/components/Footer.astro:fy3jb5">CONTACT</h4>
+        <div class="flex flex-col gap-6 text-[14px]" data-ps="src/components/Footer.astro:p4vf8a">
+          <p data-ps="src/components/Footer.astro:euol">{SITE.addressLines[0]}<br />{SITE.addressLines[1]}</p>
+          <a href={SITE.phoneHref} class="hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0i">{SITE.phone}</a>
+          <a href={`mailto:${SITE.email}`} class="hover:text-primary transition-colors" data-ps="src/components/Footer.astro:7gqc0j">{SITE.email}</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-dark-border py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-dark-muted-foreground/60" data-ps="src/components/Footer.astro:bottom">
+      <p data-ps="src/components/Footer.astro:euom">© 2026 M&G Security · All rights reserved</p>
+      <a 
+        href="https://twalkerco.com" 
+        target="_blank" 
+        rel={agencyRel} 
+        class="group inline-flex items-center gap-2 hover:text-primary transition-colors"
+        data-ps="src/components/Footer.astro:agency-credit"
+      >
+        <img 
+          src="https://pagesmith-cdn.com/f57c14f2/images/twalker-consulting-inc-favicon400-320.webp" 
+          alt="twalkerco.com" 
+          class="w-4 h-4 object-contain shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" 
+          loading="lazy" data-ps="src/components/Footer.astro:4qdjex" />
+        <span data-ps="src/components/Footer.astro:hzwfpa">Web Design & SEO by twalkerco.com</span>
+      </a>
+    </div>
+  </Container>
+</footer>

@@ -1,0 +1,97 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ServiceDetailHero from '@/components/service-detail/ServiceDetailHero.astro';
+import ServiceDetailContent from '@/components/service-detail/ServiceDetailContent.astro';
+import ServicesCTA from '@/components/security-services/ServicesCTA.astro';
+import { SITE } from '@/config/site';
+
+const paragraphs = [
+  "M&G Security has provided on site security for major sports auctions for decades. We have stood watch over millions of dollars worth of merchandise of great sports legends such as Babe Ruth, Jackie Robinson, Roy Campanella, Mike Schmidt and many others.",
+  "Our professional staff has had the honor of standing guard for Donovan McNabb, Frank Robinson, Jim Rice and Hall of Fame Baseball Great Willie Mays.",
+  "Whether your auction features high-value memorabilia, estate collections, or commercial assets, M&G Security brings the same level of professionalism and vigilance. Our law enforcement-trained team manages crowd flow, secures merchandise, and protects both equipment and cash so your sale stays focused on the bids.",
+];
+
+const provides = [
+  'Traffic and crowd flow management',
+  'Asset and merchandise protection',
+  'Parking lot and load-out security',
+  'Bidder dispute de-escalation',
+  'Loading and unloading area oversight',
+  'Cash and payment point security',
+  'Perimeter and access control',
+  'Pre-event site assessment',
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Auction Security",
+      "serviceType": "Public & Private Auction Security",
+      "description": "Professional auction security in Berks County, PA — crowd control, asset protection, and cash point security for public and estate auctions.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Berks County, PA"
+      },
+      "url": new URL('/security-services/auctions/', SITE.url).toString()
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Security Services",
+          "item": new URL('/security-services/', SITE.url).toString()
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Auction Security",
+          "item": new URL('/security-services/auctions/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Auction Security — M&G Security, Berks County PA"
+  description="M&G Security provides professional auction security in Berks County, PA — crowd control, asset protection and cash point security for public auctions."
+  jsonLd={jsonLd}
+>
+  <ServiceDetailHero 
+    title="Auction security" 
+    subtitle="We'll keep your auction safe" 
+    bgImage="https://images.pexels.com/photos/30830063/pexels-photo-30830063.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  />
+  <ServiceDetailContent
+    serviceName="auction security"
+    paragraphs={paragraphs}
+    provides={provides}
+  />
+  <ServicesCTA heading="Need Auction security?" />
+</BaseLayout>

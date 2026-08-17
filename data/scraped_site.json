@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "url": "https://mandgsecurity.clientsite.agency/",
+  "structured": {
+    "title": "M&G Security -- Professional Security Services Berks County, PA",
+    "description": "M&G Security provides professional security services for events, construction sites, corporate properties and more across Berks County, PA. Founded in 1997 by former law enforcement officers.",
+    "url": "https://mandgsecurity.clientsite.agency/",
+    "imageCount": 6,
+    "branding": {
+      "colors": {
+        "primary": "#DCA400",
+        "secondary": "#4F5661",
+        "accent": "#DCA400",
+        "background": "#F8F8F8",
+        "textPrimary": "#0A121F",
+        "link": "#0A121F"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Manrope",
+          "heading": "Space Grotesk"
+        },
+        "fontStacks": {
+          "heading": [
+            "Space Grotesk",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "body": [
+            "Manrope",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Manrope",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "60px",
+          "h2": "48px",
+          "body": "16px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 4,
+        "borderRadius": "0px"
+      },
+      "logo": "https://mandgsecurity.clientsite.agency/project_files/1bf70c2f-d2e2-4a14-9178-9762d73e2ef9/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text.webp",
+      "favicon": "https://mandgsecurity.clientsite.agency/vite.svg"
+    },
+    "pages": [
+      {
+        "slug": "index",
+        "path": "/",
+        "title": "M&G Security -- Professional Security Services Berks County, PA",
+        "file": "data/pages/index.md"
+      }
+    ],
+    "availablePages": [
+      {
+        "path": "/security-services/",
+        "label": "Security Services",
+        "slug": "security-services",
+        "scraped": false
+      },
+      {
+        "path": "/about-us/",
+        "label": "About Us",
+        "slug": "about-us",
+        "scraped": false
+      },
+      {
+        "path": "/photo-gallery/",
+        "label": "Photo Gallery",
+        "slug": "photo-gallery",
+        "scraped": false
+      },
+      {
+        "path": "/contact-us/",
+        "label": "Contact Us",
+        "slug": "contact-us",
+        "scraped": false
+      },
+      {
+        "path": "/employment-opportunities/",
+        "label": "Employment Opportunities",
+        "slug": "employment-opportunities",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/apartment-complex/",
+        "label": "Apartment Complex",
+        "slug": "security-services-apartment-complex",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/auctions/",
+        "label": "Auctions",
+        "slug": "security-services-auctions",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/construction-sites/",
+        "label": "Construction Sites",
+        "slug": "security-services-construction-sites",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/festivals-major-events/",
+        "label": "Festivals Major Events",
+        "slug": "security-services-festivals-major-events",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/sporting-events/",
+        "label": "Sporting Events",
+        "slug": "security-services-sporting-events",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/concert-security/",
+        "label": "Concert Security",
+        "slug": "security-services-concert-security",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/high-school-events/",
+        "label": "High School Events",
+        "slug": "security-services-high-school-events",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/restaurant-maintenance/",
+        "label": "Restaurant Maintenance",
+        "slug": "security-services-restaurant-maintenance",
+        "scraped": false
+      },
+      {
+        "path": "/security-services/private-investigation/",
+        "label": "Private Investigation",
+        "slug": "security-services-private-investigation",
+        "scraped": false
+      },
+      {
+        "path": "/style-guide/",
+        "label": "Style Guide",
+        "slug": "style-guide",
+        "scraped": false
+      },
+      {
+        "path": "/about-this-site/",
+        "label": "About This Site",
+        "slug": "about-this-site",
+        "scraped": false
+      }
+    ]
+  },
+  "metadata": {
+    "scraper": "firecrawl-crawl-endpoint",
+    "timestamp": "2026-08-14T05:51:00.247Z",
+    "homepageContentLength": 6914,
+    "imageCount": 6,
+    "hasBranding": true,
+    "hasElementorEnrichment": false,
+    "hasVisibleIr": false,
+    "pagesDiscovered": 16,
+    "pagesScraped": 1
+  }
+}

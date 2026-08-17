@@ -1,0 +1,56 @@
+---
+export interface Props {
+  title: string;
+  subtitle: string;
+  breadcrumb?: string;
+  bgImage?: string;
+}
+
+const { 
+  title, 
+  subtitle, 
+  breadcrumb = title, 
+  bgImage = "https://pagesmith-cdn.com/f57c14f2/images/cinematic-wide-shot-of-professional-corporate-and-event-secu-b6f6806f-1024.webp" 
+} = Astro.props;
+---
+
+<section
+  id="hero"
+  class="relative bg-dark-background pt-[140px] pb-[60px] md:pt-[160px] md:pb-[80px] flex flex-col items-center justify-center text-center overflow-hidden"
+ data-ps="src/components/security-services/SportHero.astro:sbwu71">
+  <!-- Background Image with Dark Overlay -->
+  <div class="absolute inset-0 z-0" data-ps="src/components/security-services/SportHero.astro:cz05ty">
+    <img 
+      src={bgImage} 
+      alt={title} 
+      class="w-full h-full object-cover opacity-35" 
+      loading="eager"
+      fetchpriority="high" data-ps="src/components/security-services/SportHero.astro:gw8stb" />
+    <div class="absolute inset-0 bg-gradient-to-t from-dark-background via-dark-background/65 to-dark-background/75" data-ps="src/components/security-services/SportHero.astro:cz05tz"></div>
+  </div>
+
+  <div
+    class="absolute inset-0 pointer-events-none z-0"
+    style="background: radial-gradient(at 100% 0%, oklch(0.75 0.16 85 / 0.12), rgba(0, 0, 0, 0) 55%);"
+   data-ps="src/components/security-services/SportHero.astro:rad123">
+  </div>
+  <div class="relative z-10 flex flex-col items-center justify-center text-center px-6" data-ps="src/components/security-services/SportHero.astro:cz05tz">
+    <div class="flex items-center gap-2 mb-6 text-primary text-[12px] uppercase font-bold tracking-widest" data-ps="src/components/security-services/SportHero.astro:cz05u0">
+      <span class="w-1.5 h-4 bg-primary" data-ps="src/components/security-services/SportHero.astro:98us73"></span>
+      Security Services
+    </div>
+    <h1 class="text-dark-foreground text-[60px] leading-[60px] font-bold uppercase tracking-tight max-w-4xl" data-ps="src/components/security-services/SportHero.astro:o1kdqj">
+      {title}
+    </h1>
+    <p class="mt-6 text-dark-muted-foreground text-[16px] leading-[26px] max-w-2xl" data-ps="src/components/security-services/SportHero.astro:vbeux0">
+      {subtitle}
+    </p>
+    <nav class="mt-8 text-dark-muted-foreground/70 text-[12px] uppercase tracking-wider font-bold flex items-center gap-2 flex-wrap justify-center" data-ps="src/components/security-services/SportHero.astro:px53mo">
+      <a href="/" class="hover:text-primary transition-colors" data-ps="src/components/security-services/SportHero.astro:ghu8ft">Home</a>
+      <span data-ps="src/components/security-services/SportHero.astro:dg6rc7">/</span>
+      <a href="/security-services/" class="hover:text-primary transition-colors" data-ps="src/components/security-services/SportHero.astro:ghu8fs">Security Services</a>
+      <span data-ps="src/components/security-services/SportHero.astro:dg6rc8">/</span>
+      <span class="text-primary" data-ps="src/components/security-services/SportHero.astro:dg6rc9">{breadcrumb}</span>
+    </nav>
+  </div>
+</section>

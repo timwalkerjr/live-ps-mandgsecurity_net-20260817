@@ -1,0 +1,41 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import Services from '@/components/home/Services.astro';
+import About from '@/components/home/About.astro';
+import Testimonials from '@/components/home/Testimonials.astro';
+import Marquee from '@/components/home/Marquee.astro';
+import Hiring from '@/components/home/Hiring.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "M&G Security",
+  "image": "https://mandgsecurity.clientsite.agency/project_files/1bf70c2f-d2e2-4a14-9178-9762d73e2ef9/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text.webp",
+  "@id": "https://mandgsecurity.clientsite.agency/",
+  "url": "https://mandgsecurity.clientsite.agency/",
+  "telephone": "(610) 562-0971",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "P.O. Box 6255",
+    "addressLocality": "Wyomissing",
+    "addressRegion": "PA",
+    "postalCode": "19610",
+    "addressCountry": "US"
+  },
+  "description": "M&G Security provides professional security services for events, construction sites, corporate properties and more across Berks County, PA. Locally owned and operated."
+};
+---
+
+<BaseLayout 
+  title="M&G Security -- Professional Security Services Berks County, PA" 
+  description="M&G Security provides professional security services for events, construction sites, corporate properties and more across Berks County, PA."
+  jsonLd={jsonLd}
+>
+  <Hero />
+  <Services />
+  <About />
+  <Testimonials />
+  <Marquee />
+  <Hiring />
+</BaseLayout>

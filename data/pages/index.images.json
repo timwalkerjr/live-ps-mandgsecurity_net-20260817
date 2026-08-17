@@ -1,0 +1,138 @@
+[
+  {
+    "url": "https://pagesmith-cdn.com/f57c14f2/images/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text-1536.webp",
+    "altText": "M&G Security",
+    "context": "-",
+    "isLogo": true,
+    "originalWidth": 2554,
+    "originalHeight": 808,
+    "hasTransparency": true,
+    "contentTone": "mixed",
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text-1536.webp",
+        "width": 1536
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/3d957a88-20e5-4612-a102-248b0fcabfa4_compressed_mg-lockup_gold-head_white-text-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-1536.webp",
+    "altText": "Professional security operations background",
+    "context": "On call 24/7",
+    "isLogo": false,
+    "originalWidth": 1935,
+    "originalHeight": 1080,
+    "hasTransparency": false,
+    "contentTone": "dark",
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-1536.webp",
+        "width": 1536
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/81c017098ff77a4f07c345b2eb9ad978-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/f57c14f2/images/a058a2f1cba0127ec1d47bef14807be2-768.webp",
+    "altText": "M&G Security professional guard",
+    "context": "Section: Professional Security Services | Our Story",
+    "isLogo": false,
+    "originalWidth": 892,
+    "originalHeight": 675,
+    "hasTransparency": false,
+    "contentTone": "dark",
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/a058a2f1cba0127ec1d47bef14807be2-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/a058a2f1cba0127ec1d47bef14807be2-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/a058a2f1cba0127ec1d47bef14807be2-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/f57c14f2/images/6f789f590545fc92c6e48802d5ae4d41-320.webp",
+    "altText": "Mr. Tom Doyle",
+    "context": "Section: What Our Clients Say | Activities Chairman, Immaculate Conception Church",
+    "isLogo": false,
+    "originalWidth": 512,
+    "originalHeight": 512,
+    "hasTransparency": false,
+    "contentTone": "mixed",
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/6f789f590545fc92c6e48802d5ae4d41-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/f57c14f2/images/7b2750c824349298f38e0e0245fd876e-320.webp",
+    "altText": "Charles Mountcastle III",
+    "context": "Section: Mr. Tom Doyle | Monty's Construction",
+    "isLogo": false,
+    "originalWidth": 512,
+    "originalHeight": 512,
+    "hasTransparency": false,
+    "contentTone": "mixed",
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/7b2750c824349298f38e0e0245fd876e-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/f57c14f2/images/e4d5820333107c8d13d5826f7f6fcc50-320.webp",
+    "altText": "Beth Hiem",
+    "context": "Section: Charles Mountcastle III | Apartment Complex Manager",
+    "isLogo": false,
+    "originalWidth": 512,
+    "originalHeight": 512,
+    "hasTransparency": false,
+    "contentTone": "dark",
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/f57c14f2/images/e4d5820333107c8d13d5826f7f6fcc50-320.webp",
+        "width": 320
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContactHero from '@/components/contact-us/ContactHero.astro';
+import ContactInfo from '@/components/contact-us/ContactInfo.astro';
+import ContactForm from '@/components/contact-us/ContactForm.astro';
+import ContactHiring from '@/components/contact-us/ContactHiring.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": new URL('/contact-us/', SITE.url).toString(),
+      "url": new URL('/contact-us/', SITE.url).toString(),
+      "name": "Contact Us — M&G Security",
+      "description": "Contact M&G Security for a free, no-obligation security quote. Phone (610) 562-0971. 24/7 emergency response. P.O. Box 6255, Wyomissing, PA 19610.",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": SITE.name,
+        "telephone": SITE.phone,
+        "email": SITE.email,
+        "url": SITE.url,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": SITE.addressLines[0],
+          "addressLocality": "Wyomissing",
+          "addressRegion": "PA",
+          "postalCode": "19610",
+          "addressCountry": "US"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact Us",
+          "item": new URL('/contact-us/', SITE.url).toString()
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Contact Us — M&G Security"
+  description="Contact M&G Security for a free, no-obligation security quote. Phone (610) 562-0971. 24/7 emergency response. P.O. Box 6255, Wyomissing, PA 19610."
+  jsonLd={jsonLd}
+>
+  <ContactHero />
+  <ContactInfo />
+  <ContactForm />
+  <ContactHiring />
+</BaseLayout>

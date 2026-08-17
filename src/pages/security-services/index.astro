@@ -1,0 +1,121 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ServicesHero from '@/components/security-services/ServicesHero.astro';
+import ServicesGrid from '@/components/security-services/ServicesGrid.astro';
+import ServicesFAQ from '@/components/security-services/ServicesFAQ.astro';
+import ServicesCTA from '@/components/security-services/ServicesCTA.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": new URL('/security-services/', SITE.url).toString(),
+      "url": new URL('/security-services/', SITE.url).toString(),
+      "name": "Security Services — M&G Security",
+      "description": "M&G Security provides professional security services for events, construction sites, corporate properties and more across Berks County, PA.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": SITE.url
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Security Services",
+            "item": new URL('/security-services/', SITE.url).toString()
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": SITE.name,
+      "telephone": SITE.phone,
+      "email": SITE.email,
+      "url": SITE.url,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": SITE.addressLines[0],
+        "addressLocality": "Wyomissing",
+        "addressRegion": "PA",
+        "postalCode": "19610",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Berks County, PA"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of security services does M&G Security offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide comprehensive security solutions including apartment complex security, construction site protection, public auctions, festivals, sporting events, concerts, high school functions, after-hours restaurant monitoring, and licensed private investigations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your security guards and investigators licensed and insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. M&G Security, owned and operated by KRE Security LLC, is fully licensed, bonded, and insured in the Commonwealth of Pennsylvania. Our personnel undergo thorough background investigations and rigorous professional training."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you deploy security personnel for an event or urgent need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We can accommodate both planned long-term contracts and short-notice or emergency deployments. For urgent assignments, call our direct line at (610) 562-0971 to speak immediately with our operations team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What geographic areas do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We primarily serve Berks County (including Reading, Wyomissing, Kutztown, Hamburg, and surrounding townships) as well as adjacent counties and communities across Eastern and Central Pennsylvania."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we customize security coverage hours and patrol routines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Every property and event has distinct security requirements. We tailor our staffing schedules, stationary posts, access control points, and mobile patrols to fit your exact operational requirements and budget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quote for security services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can request a quote by calling us directly at (610) 562-0971, emailing jemes@kresecurity.com, or submitting our online contact form. We will review your site specifications and provide a competitive, transparent proposal."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Security Services — M&G Security, Berks County PA"
+  description="M&G Security provides professional security services for events, construction sites, corporate properties and more across Berks County, PA. Locally owned and operated."
+  jsonLd={jsonLd}
+>
+  <ServicesHero />
+  <ServicesGrid />
+  <ServicesFAQ />
+  <ServicesCTA heading="Need Security for Your Next Event?" />
+</BaseLayout>

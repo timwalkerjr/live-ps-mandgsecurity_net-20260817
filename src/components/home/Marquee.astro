@@ -1,0 +1,36 @@
+---
+const items = [
+  "Santander Arena",
+  "Reading Royals",
+  "Reading Liederkranz Oktoberfest",
+  "Berks Catholic",
+  "Daniel Boone High School",
+  "Immaculate Conception Church",
+  "Monty's Construction"
+];
+---
+
+<section id="marquee" class="py-12 bg-dark-background overflow-hidden flex flex-col items-center" data-ps="src/components/home/Marquee.astro:section">
+  <span class="text-dark-muted-foreground/60 text-[10px] font-bold uppercase tracking-[0.15em] mb-8" data-ps="src/components/home/Marquee.astro:xv9qqx">
+    TRUSTED BY LEADING ORGANIZATIONS ACROSS BERKS COUNTY
+  </span>
+
+  <div class="relative w-full flex items-center" data-ps="src/components/home/Marquee.astro:wrap">
+    <div class="animate-marquee flex gap-16 items-center" data-ps="src/components/home/Marquee.astro:8k46ki">
+      {/* Set 1 */}
+      {items.map((item, __psIdx) => (
+        <div class="flex items-center gap-4 text-dark-foreground font-bold uppercase text-[16px] tracking-wider whitespace-nowrap" data-ps={`src/components/home/Marquee.astro:8k46kj-${__psIdx}`}>
+          <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          {item}
+        </div>
+      ))}
+      {/* Set 2 (Duplicate for seamless loop) */}
+      {items.map((item, __psIdx) => (
+        <div class="flex items-center gap-4 text-dark-foreground font-bold uppercase text-[16px] tracking-wider whitespace-nowrap" data-ps={`src/components/home/Marquee.astro:8k46kk-${__psIdx}`}>
+          <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          {item}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

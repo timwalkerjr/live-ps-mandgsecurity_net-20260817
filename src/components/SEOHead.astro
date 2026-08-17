@@ -1,0 +1,84 @@
+---
+// SEO Head component - shared across all layouts
+// Import inside <head> tag, outputs meta tags (no wrapper)
+
+import { SITE } from '@/config/site';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  canonicalUrl?: string;
+  jsonLd?: Record<string, any>;
+  noIndex?: boolean;
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  image,
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  canonicalUrl,
+  jsonLd,
+  noIndex,
+} = Astro.props;
+
+// Environment variables for auto-generated OG images
+const ACCOUNT_ID = import.meta.env.ACCOUNT_ID || '';
+const SITE_ID = import.meta.env.SITE_ID || '';
+const OG_IMAGE_CDN_URL = import.meta.env.OG_IMAGE_CDN_URL || 'https://pagesmith-cdn.com';
+
+// Auto-generate OG image URL
+const pathname = Astro.url.pathname;
+const slug = pathname === '/' ? 'index' : pathname.replace(/^\/|\/$/g, '');
+
+const autoImage = (ACCOUNT_ID && SITE_ID)
+  ? `${OG_IMAGE_CDN_URL}/${ACCOUNT_ID}/${SITE_ID}/${slug}-og.png`
+  : `/${slug === 'index' ? 'home' : slug.split('/')[0]}-og.jpg`;
+const finalImage = image || autoImage;
+
+// Use provided canonical URL or generate from current path
+const finalCanonicalURL = canonicalUrl || new URL(Astro.url.pathname, SITE.url).toString();
+const ogImageURL = finalImage.startsWith('http') ? finalImage : new URL(finalImage, SITE.url).toString();
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content={Astro.generator} />
+<meta name="description" content={description} />
+{noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+<!-- Canonical URL -->
+<link rel="canonical" href={finalCanonicalURL} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={finalCanonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageURL} />
+{publishedTime && <meta property="article:published_time" content={publishedTime} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={SITE.twitterHandle} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageURL} />
+
+<!-- Page Title -->
+<title>{title}</title>
+
+<!-- Structured Data / JSON-LD -->
+{jsonLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+)}
+
+<link rel="icon" type="image/svg+xml" href="https://pagesmith-cdn.com/f57c14f2/favicons/favicon-59b820e7.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://pagesmith-cdn.com/f57c14f2/favicons/apple-touch-icon-59b820e7.png" />
